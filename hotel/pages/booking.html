@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking  | Section</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet">
+</head>
+<body>
+    
+     <!-- ==========================================================
+         HEADER / PRIMARY NAVIGATION
+    =========================================================== -->
+    
+   <!-- Header -->
+<header class="border-b border-stone-200 bg-[#faf9f6]">
+    <nav
+        aria-label="Primary navigation"
+        class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8"
+    >
+        <!-- Brand -->
+        <a
+            href="../index2.html"
+            class="flex shrink-0 flex-col"
+        >
+            <span class="font-serif text-xl font-semibold tracking-[0.2em] text-stone-900">
+                Maison Élan
+            </span>
+
+            <span class="mt-1 text-[0.55rem] font-medium uppercase tracking-[0.35em] text-stone-500">
+                Hotels &amp; Resorts
+            </span>
+        </a>
+
+        <!-- Primary Navigation -->
+        <ul class="hidden items-center gap-8 lg:flex">
+            <li>
+                <a
+                    href="../index2.html"
+                    class="text-xs font-medium uppercase tracking-wider text-stone-600 transition hover:text-[#a67c37]"
+                >
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../pages/hotels.html"
+                    class="text-xs font-medium uppercase tracking-wider text-stone-600 transition hover:text-[#a67c37]"
+                >
+                    Hotels
+                </a>
+            </li>
+
+
+                        <li>
+                            <a
+                                href="../pages/hotel-details.html"
+                             class="text-xs font-medium uppercase tracking-wider text-stone-600 transition hover:text-[#a67c37]"
+                >
+                                Experiences
+                            </a>
+                        </li>
+
+
+            <li>
+                <a
+                    href="../pages/booking.html" 
+                   aria-current="page"
+                    class="border-b border-[#a67c37] pb-2 text-xs font-semibold uppercase tracking-wider text-[#a67c37]"
+                >
+                    Offers
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../pages/contact.html"
+                    class="text-xs font-medium uppercase tracking-wider text-stone-600 transition hover:text-[#a67c37]"
+                >
+                    Contact
+                </a>
+            </li>
+        </ul>
+
+        <!-- Header Actions -->
+        <ul class="flex items-center gap-5">
+           <li>
+    <a
+        href="#sign-in"
+        aria-label="Sign in"
+        class="hidden items-center justify-center text-xl text-stone-700 transition hover:text-[#a67c37] sm:inline-flex"
+    >
+        <i
+            class="bx bx-user"
+            aria-hidden="true"
+        ></i>
+    </a>
+</li>
+            <li>
+                <a
+                    href="booking.html" 
+                    class="inline-flex items-center justify-center bg-[#a67c37] px-5 py-3 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-[#8d682e]"
+                >
+                    Book Your Stay
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<!-- Main Reservation Area -->
+<section
+    aria-labelledby="reservation-heading"
+    class="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-start lg:gap-12 lg:px-8 lg:py-24"
+>
+    <!-- Reservation Form Area -->
+    <section>
+        <header class="border-b border-stone-200 pb-8">
+            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-[#a67c37]">
+                Complete your booking
+            </p>
+
+            <h2
+                id="reservation-heading"
+                class="mt-3 font-serif text-4xl font-medium text-stone-900 sm:text-5xl"
+            >
+                Your reservation
+            </h2>
+
+            <p class="mt-4 max-w-2xl text-sm leading-7 text-stone-600 sm:text-base">
+                Review your stay details and complete the information below to
+                request your reservation.
+            </p>
+        </header>
+
+        <!-- Reservation Form -->
+        <form
+            action="#"
+            method="post"
+            class="mt-10 space-y-10"
+        >
+
+            <!-- Stay Details -->
+            <section
+                aria-labelledby="stay-details-heading"
+                class="border border-stone-200 bg-white p-6 sm:p-8"
+            >
+                <header class="border-b border-stone-200 pb-5">
+                    <h2
+                        id="stay-details-heading"
+                        class="font-serif text-2xl font-medium text-stone-900"
+                    >
+                        Your stay
+                    </h2>
+                </header>
+
+                <fieldset class="mt-6 grid gap-5 sm:grid-cols-2">
+                    <legend class="sr-only">
+                        Stay details
+                    </legend>
+
+                    <p>
+                        <label
+                            for="check-in"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Check-in
+                        </label>
+
+                        <input
+                            type="date"
+                            id="check-in"
+                            name="check_in"
+                            value="2026-06-10"
+                            required
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm text-stone-800 outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                    </p>
+
+                    <p>
+                        <label
+                            for="check-out"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Check-out
+                        </label>
+
+                        <input
+                            type="date"
+                            id="check-out"
+                            name="check_out"
+                            value="2026-06-15"
+                            required
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm text-stone-800 outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                    </p>
+
+                    <p>
+                        <label
+                            for="guests"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Guests
+                        </label>
+
+                        <select
+                            id="guests"
+                            name="guests"
+                            required
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm text-stone-800 outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                            <option value="1">1 Guest</option>
+                            <option value="2" selected>2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label
+                            for="room"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Room
+                        </label>
+
+                        <select
+                            id="room"
+                            name="room"
+                            required
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm text-stone-800 outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                            <option value="ocean-view-villa">
+                                Ocean View Villa
+                            </option>
+
+                            <option value="overwater-villa" selected>
+                                Overwater Villa
+                            </option>
+
+                            <option value="presidential-ocean-residence">
+                                Presidential Ocean Residence
+                            </option>
+                        </select>
+                    </p>
+                </fieldset>
+            </section>
+
+
+            <!-- Guest Information -->
+            <section
+                aria-labelledby="guest-information-heading"
+                class="border border-stone-200 bg-white p-6 sm:p-8"
+            >
+                <header class="border-b border-stone-200 pb-5">
+                    <h2
+                        id="guest-information-heading"
+                        class="font-serif text-2xl font-medium text-stone-900"
+                    >
+                        Guest information
+                    </h2>
+                </header>
+
+                <fieldset class="mt-6 grid gap-5 sm:grid-cols-2">
+                    <legend class="sr-only">
+                        Primary guest details
+                    </legend>
+
+                    <p>
+                        <label
+                            for="first-name"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            First name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="first_name"
+                            autocomplete="given-name"
+                            required
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                    </p>
+
+                    <p>
+                        <label
+                            for="last-name"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Last name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="last_name"
+                            autocomplete="family-name"
+                            required
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                    </p>
+
+                    <p>
+                        <label
+                            for="email"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Email address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                    </p>
+
+                    <p>
+                        <label
+                            for="phone"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Phone number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+1 234 567 890"
+                            autocomplete="tel"
+                            required
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                    </p>
+
+                    <p class="sm:col-span-2">
+                        <label
+                            for="country"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Country / Region
+                        </label>
+
+                        <select
+                            id="country"
+                            name="country"
+                            autocomplete="country-name"
+                            required
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                            <option value="">
+                                Select your country or region
+                            </option>
+
+                            <option value="cameroon">Cameroon</option>
+                            <option value="united-states">United States</option>
+                            <option value="united-kingdom">United Kingdom</option>
+                            <option value="france">France</option>
+                            <option value="germany">Germany</option>
+                            <option value="canada">Canada</option>
+                            <option value="australia">Australia</option>
+                            <option value="united-arab-emirates">
+                                United Arab Emirates
+                            </option>
+                            <option value="south-africa">South Africa</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                </fieldset>
+            </section>
+
+
+            <!-- Guest Preferences -->
+            <section
+                aria-labelledby="guest-preferences-heading"
+                class="border border-stone-200 bg-white p-6 sm:p-8"
+            >
+                <header class="border-b border-stone-200 pb-5">
+                    <h2
+                        id="guest-preferences-heading"
+                        class="font-serif text-2xl font-medium text-stone-900"
+                    >
+                        Guest preferences
+                    </h2>
+                </header>
+
+                <fieldset class="mt-6">
+                    <legend class="text-xs font-semibold uppercase tracking-wider text-stone-700">
+                        Bed preference
+                    </legend>
+
+                    <section class="mt-4 grid gap-4 sm:grid-cols-2">
+                        <p class="flex items-center gap-3 border border-stone-200 bg-[#faf9f6] p-4">
+                            <input
+                                type="radio"
+                                id="king-bed"
+                                name="bed_preference"
+                                value="king-bed"
+                                checked
+                                class="h-4 w-4 accent-[#a67c37]"
+                            >
+
+                            <label
+                                for="king-bed"
+                                class="cursor-pointer text-sm text-stone-700"
+                            >
+                                King Bed
+                            </label>
+                        </p>
+
+                        <p class="flex items-center gap-3 border border-stone-200 bg-[#faf9f6] p-4">
+                            <input
+                                type="radio"
+                                id="twin-beds"
+                                name="bed_preference"
+                                value="twin-beds"
+                                class="h-4 w-4 accent-[#a67c37]"
+                            >
+
+                            <label
+                                for="twin-beds"
+                                class="cursor-pointer text-sm text-stone-700"
+                            >
+                                Twin Beds
+                            </label>
+                        </p>
+                    </section>
+                </fieldset>
+
+                <fieldset class="mt-7">
+                    <legend class="text-xs font-semibold uppercase tracking-wider text-stone-700">
+                        Arrival time
+                    </legend>
+
+                    <p class="mt-4">
+                        <label
+                            for="arrival-time"
+                            class="mb-2 block text-sm text-stone-700"
+                        >
+                            Preferred arrival time
+                        </label>
+
+                        <select
+                            id="arrival-time"
+                            name="arrival_time"
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                            <option value="before-12">
+                                Before 12:00 PM
+                            </option>
+
+                            <option value="12-3">
+                                12:00 PM – 3:00 PM
+                            </option>
+
+                            <option value="3-6">
+                                3:00 PM – 6:00 PM
+                            </option>
+
+                            <option value="6-9">
+                                6:00 PM – 9:00 PM
+                            </option>
+
+                            <option value="after-9">
+                                After 9:00 PM
+                            </option>
+                        </select>
+                    </p>
+                </fieldset>
+            </section>
+
+
+            <!-- Special Requests -->
+            <section
+                aria-labelledby="special-requests-heading"
+                class="border border-stone-200 bg-white p-6 sm:p-8"
+            >
+                <header class="border-b border-stone-200 pb-5">
+                    <h2
+                        id="special-requests-heading"
+                        class="font-serif text-2xl font-medium text-stone-900"
+                    >
+                        Special requests
+                    </h2>
+                </header>
+
+                <fieldset class="mt-6">
+                    <legend class="sr-only">
+                        Additional requests
+                    </legend>
+
+                    <p>
+                        <label
+                            for="special-requests"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Anything else we should know?
+                        </label>
+
+                        <textarea
+                            id="special-requests"
+                            name="special_requests"
+                            rows="5"
+                            placeholder="Tell us about dietary requirements, accessibility needs, celebrations, or other requests."
+                            class="w-full resize-y border border-stone-300 bg-[#faf9f6] px-4 py-4 text-sm leading-6 outline-none transition placeholder:text-stone-400 focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        ></textarea>
+                    </p>
+                </fieldset>
+            </section>
+
+
+            <!-- Arrival Information -->
+            <section
+                aria-labelledby="arrival-information-heading"
+                class="border border-stone-200 bg-white p-6 sm:p-8"
+            >
+                <header class="border-b border-stone-200 pb-5">
+                    <h2
+                        id="arrival-information-heading"
+                        class="font-serif text-2xl font-medium text-stone-900"
+                    >
+                        Arrival information
+                    </h2>
+
+                    <p class="mt-2 text-sm leading-6 text-stone-600">
+                        Private airport transfers can be arranged before arrival.
+                    </p>
+                </header>
+
+                <fieldset class="mt-6">
+                    <legend class="text-xs font-semibold uppercase tracking-wider text-stone-700">
+                        Airport transfer
+                    </legend>
+
+                    <section class="mt-4 space-y-3">
+                        <p class="flex items-center gap-3 border border-stone-200 bg-[#faf9f6] p-4">
+                            <input
+                                type="radio"
+                                id="airport-transfer-yes"
+                                name="airport_transfer"
+                                value="yes"
+                                class="h-4 w-4 accent-[#a67c37]"
+                            >
+
+                            <label
+                                for="airport-transfer-yes"
+                                class="cursor-pointer text-sm text-stone-700"
+                            >
+                                Yes, arrange airport transfer
+                            </label>
+                        </p>
+
+                        <p class="flex items-center gap-3 border border-stone-200 bg-[#faf9f6] p-4">
+                            <input
+                                type="radio"
+                                id="airport-transfer-no"
+                                name="airport_transfer"
+                                value="no"
+                                checked
+                                class="h-4 w-4 accent-[#a67c37]"
+                            >
+
+                            <label
+                                for="airport-transfer-no"
+                                class="cursor-pointer text-sm text-stone-700"
+                            >
+                                No, I'll arrange my own transportation
+                            </label>
+                        </p>
+                    </section>
+                </fieldset>
+            </section>
+
+
+            <!-- Payment Method -->
+            <section
+                aria-labelledby="payment-method-heading"
+                class="border border-stone-200 bg-white p-6 sm:p-8"
+            >
+                <header class="border-b border-stone-200 pb-5">
+                    <h2
+                        id="payment-method-heading"
+                        class="font-serif text-2xl font-medium text-stone-900"
+                    >
+                        Payment method
+                    </h2>
+                </header>
+
+                <fieldset class="mt-6">
+                    <legend class="text-xs font-semibold uppercase tracking-wider text-stone-700">
+                        Choose your payment method
+                    </legend>
+
+                    <section class="mt-4 grid gap-3">
+                        <p class="flex items-center gap-3 border border-stone-200 bg-[#faf9f6] p-4">
+                            <input
+                                type="radio"
+                                id="credit-card"
+                                name="payment_method"
+                                value="credit-card"
+                                checked
+                                class="h-4 w-4 accent-[#a67c37]"
+                            >
+
+                            <label
+                                for="credit-card"
+                                class="cursor-pointer text-sm text-stone-700"
+                            >
+                                Credit / Debit Card
+                            </label>
+                        </p>
+
+                        <p class="flex items-center gap-3 border border-stone-200 bg-[#faf9f6] p-4">
+                            <input
+                                type="radio"
+                                id="paypal"
+                                name="payment_method"
+                                value="paypal"
+                                class="h-4 w-4 accent-[#a67c37]"
+                            >
+
+                            <label
+                                for="paypal"
+                                class="cursor-pointer text-sm text-stone-700"
+                            >
+                                PayPal
+                            </label>
+                        </p>
+
+                        <p class="flex items-center gap-3 border border-stone-200 bg-[#faf9f6] p-4">
+                            <input
+                                type="radio"
+                                id="pay-at-property"
+                                name="payment_method"
+                                value="pay-at-property"
+                                class="h-4 w-4 accent-[#a67c37]"
+                            >
+
+                            <label
+                                for="pay-at-property"
+                                class="cursor-pointer text-sm text-stone-700"
+                            >
+                                Pay at Property
+                            </label>
+                        </p>
+                    </section>
+                </fieldset>
+            </section>
+
+
+            <!-- Card Details -->
+            <section
+                aria-labelledby="card-details-heading"
+                class="border border-stone-200 bg-white p-6 sm:p-8"
+            >
+                <header class="border-b border-stone-200 pb-5">
+                    <h2
+                        id="card-details-heading"
+                        class="font-serif text-2xl font-medium text-stone-900"
+                    >
+                        Card details
+                    </h2>
+                </header>
+
+                <fieldset class="mt-6 grid gap-5 sm:grid-cols-2">
+                    <legend class="sr-only">
+                        Payment card information
+                    </legend>
+
+                    <p class="sm:col-span-2">
+                        <label
+                            for="cardholder-name"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Cardholder name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cardholder-name"
+                            name="cardholder_name"
+                            autocomplete="cc-name"
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                    </p>
+
+                    <p class="sm:col-span-2">
+                        <label
+                            for="card-number"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Card number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="card-number"
+                            name="card_number"
+                            placeholder="1234 5678 9012 3456"
+                            autocomplete="cc-number"
+                            inputmode="numeric"
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                    </p>
+
+                    <p>
+                        <label
+                            for="expiration-date"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Expiration date
+                        </label>
+
+                        <input
+                            type="month"
+                            id="expiration-date"
+                            name="expiration_date"
+                            autocomplete="cc-exp"
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                    </p>
+
+                    <p>
+                        <label
+                            for="security-code"
+                            class="mb-2 block text-xs font-semibold uppercase tracking-wider text-stone-700"
+                        >
+                            Security code
+                        </label>
+
+                        <input
+                            type="text"
+                            id="security-code"
+                            name="security_code"
+                            placeholder="CVV"
+                            autocomplete="cc-csc"
+                            inputmode="numeric"
+                            class="min-h-[52px] w-full border border-stone-300 bg-[#faf9f6] px-4 text-sm outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                        >
+                    </p>
+
+                    <p class="flex items-center gap-2 text-xs leading-5 text-stone-500 sm:col-span-2">
+                        <i
+                            class="bx bx-lock-alt text-base text-[#a67c37]"
+                            aria-hidden="true"
+                        ></i>
+
+                        Your payment information is securely protected.
+                    </p>
+                </fieldset>
+            </section>
+
+
+            <!-- Terms and Marketing Consent -->
+            <section
+                aria-labelledby="terms-heading"
+                class="border border-stone-200 bg-white p-6 sm:p-8"
+            >
+                <header class="border-b border-stone-200 pb-5">
+                    <h2
+                        id="terms-heading"
+                        class="font-serif text-2xl font-medium text-stone-900"
+                    >
+                        Terms &amp; conditions
+                    </h2>
+                </header>
+
+                <fieldset class="mt-6 space-y-5">
+                    <legend class="sr-only">
+                        Reservation agreement
+                    </legend>
+
+                    <p class="flex items-start gap-3">
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            required
+                            class="mt-1 h-4 w-4 shrink-0 accent-[#a67c37]"
+                        >
+
+                        <label
+                            for="terms"
+                            class="text-sm leading-6 text-stone-600"
+                        >
+                            I agree to the
+                            <a
+                                href="contact.html"
+                                class="font-medium text-[#a67c37] underline underline-offset-4 hover:text-[#8d682e]"
+                            >
+                                booking terms
+                            </a>,
+                            cancellation policy, and privacy policy.
+                        </label>
+                    </p>
+
+                    <p class="flex items-start gap-3">
+                        <input
+                            type="checkbox"
+                            id="marketing-consent"
+                            name="marketing_consent"
+                            class="mt-1 h-4 w-4 shrink-0 accent-[#a67c37]"
+                        >
+
+                        <label
+                            for="marketing-consent"
+                            class="text-sm leading-6 text-stone-600"
+                        >
+                            Send me exclusive offers and travel inspiration from
+                            Maison Élan.
+                        </label>
+                    </p>
+                </fieldset>
+            </section>
+
+
+            <!-- Confirm Reservation -->
+            <section
+                aria-label="Confirm reservation"
+                class="border border-[#a67c37]/30 bg-[#f4f1eb] p-6 text-center sm:p-8"
+            >
+                <button
+                    type="submit"
+                    class="inline-flex min-h-[56px] w-full items-center justify-center bg-[#a67c37] px-8 text-xs font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-[#8d682e] focus:outline-none focus:ring-2 focus:ring-[#a67c37] focus:ring-offset-2"
+                >
+                    Confirm &amp; Reserve
+                </button>
+
+                <p class="mt-4 text-xs leading-5 text-stone-500">
+                    You won't be charged until your reservation is confirmed.
+                </p>
+            </section>
+        </form>
+    </section>
+
+
+    <!-- Booking Summary -->
+    <aside
+        aria-labelledby="summary-heading"
+        class="lg:sticky lg:top-8"
+    >
+        <section class="overflow-hidden border border-stone-200 bg-white">
+            <header class="border-b border-stone-200 bg-[#f4f1eb] px-6 py-6">
+                <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#a67c37]">
+                    Booking summary
+                </p>
+
+                <h2
+                    id="summary-heading"
+                    class="mt-2 font-serif text-3xl font-medium text-stone-900"
+                >
+                    Your stay
+                </h2>
+            </header>
+
+
+            <!-- Hotel Summary -->
+            <article class="border-b border-stone-200 p-6">
+                <figure>
+                    <img
+                        src="1images/RM.jpg"
+                        alt="Azure Pearl Resort surrounded by turquoise Maldivian waters"
+                        class="h-48 w-full object-cover"
+                    >
+
+                    <figcaption class="sr-only">
+                        Azure Pearl Resort, North Malé Atoll, Maldives
+                    </figcaption>
+                </figure>
+
+                <header class="mt-5">
+                    <h3
+                        id="hotel-summary-heading"
+                        class="font-serif text-2xl font-medium text-stone-900"
+                    >
+                        Azure Pearl Resort
+                    </h3>
+
+                    <p class="mt-2 flex items-center gap-2 text-sm text-stone-500">
+                        <i
+                            class="bx bx-map text-base text-[#a67c37]"
+                            aria-hidden="true"
+                        ></i>
+
+                        North Malé Atoll, Maldives
+                    </p>
+                </header>
+
+                <footer class="mt-4 flex items-center gap-2 text-sm">
+                    <p class="font-medium text-stone-800">
+                        <i
+                            class="bx bxs-star text-[#a67c37]"
+                            aria-hidden="true"
+                        ></i>
+                        4.9
+                    </p>
+
+                    <p class="text-stone-500">
+                        128 reviews
+                    </p>
+                </footer>
+            </article>
+
+
+            <!-- Room Summary -->
+            <article class="border-b border-stone-200 p-6">
+                <header>
+                    <h3
+                        id="room-summary-heading"
+                        class="font-serif text-xl font-medium text-stone-900"
+                    >
+                        Overwater Villa
+                    </h3>
+                </header>
+
+                <ul class="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-xs text-stone-600">
+                    <li class="flex items-center gap-2">
+                        <i class="bx bx-user text-[#a67c37]"></i>
+                        2 guests
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                        <i class="bx bx-bed text-[#a67c37]"></i>
+                        1 King Bed
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                        <i class="bx bx-area text-[#a67c37]"></i>
+                        110 m²
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                        <i class="bx bx-water text-[#a67c37]"></i>
+                        Ocean access
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                        <i class="bx bx-swim text-[#a67c37]"></i>
+                        Private pool
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                        <i class="bx bx-restaurant text-[#a67c37]"></i>
+                        Breakfast included
+                    </li>
+                </ul>
+            </article>
+
+
+            <!-- Stay Dates -->
+            <section class="border-b border-stone-200 p-6">
+                <header>
+                    <h2
+                        id="stay-dates-heading"
+                        class="font-serif text-xl font-medium text-stone-900"
+                    >
+                        Stay details
+                    </h2>
+                </header>
+
+                <dl class="mt-5 grid grid-cols-2 gap-y-4 text-sm">
+                    <dt class="text-stone-500">Check-in</dt>
+                    <dd class="text-right font-medium text-stone-800">
+                        Wed, Jun 10, 2026
+                    </dd>
+
+                    <dt class="text-stone-500">Check-out</dt>
+                    <dd class="text-right font-medium text-stone-800">
+                        Mon, Jun 15, 2026
+                    </dd>
+
+                    <dt class="text-stone-500">Guests</dt>
+                    <dd class="text-right font-medium text-stone-800">
+                        2 Adults
+                    </dd>
+
+                    <dt class="text-stone-500">Nights</dt>
+                    <dd class="text-right font-medium text-stone-800">
+                        5 nights
+                    </dd>
+                </dl>
+            </section>
+
+
+            <!-- Price Breakdown -->
+            <section class="border-b border-stone-200 p-6">
+                <header>
+                    <h2
+                        id="price-details-heading"
+                        class="font-serif text-xl font-medium text-stone-900"
+                    >
+                        Price details
+                    </h2>
+                </header>
+
+                <dl class="mt-5 grid grid-cols-2 gap-y-4 text-sm">
+                    <dt class="text-stone-500">Room</dt>
+                    <dd class="text-right text-stone-700">
+                        $580 × 5 nights
+                    </dd>
+
+                    <dt class="text-stone-500">Room total</dt>
+                    <dd class="text-right text-stone-700">
+                        $2,900
+                    </dd>
+
+                    <dt class="text-stone-500">Taxes &amp; fees</dt>
+                    <dd class="text-right text-stone-700">
+                        $290
+                    </dd>
+
+                    <dt class="text-stone-500">Resort fee</dt>
+                    <dd class="text-right text-stone-700">
+                        $100
+                    </dd>
+
+                    <dt class="border-t border-stone-200 pt-4 font-semibold text-stone-900">
+                        Total
+                    </dt>
+
+                    <dd class="border-t border-stone-200 pt-4 text-right font-serif text-xl font-medium text-[#a67c37]">
+                        $3,290
+                    </dd>
+                </dl>
+            </section>
+
+
+            <!-- Cancellation Information -->
+            <article class="border-b border-stone-200 bg-[#f7f6f2] p-6">
+                <header class="flex items-center gap-3">
+                    <i
+                        class="bx bx-check-circle text-xl text-[#a67c37]"
+                        aria-hidden="true"
+                    ></i>
+
+                    <h2
+                        id="cancellation-heading"
+                        class="font-serif text-lg font-medium text-stone-900"
+                    >
+                        Free cancellation
+                    </h2>
+                </header>
+
+                <p class="mt-3 text-xs leading-6 text-stone-600">
+                    Cancel up to 7 days before your arrival for a full refund.
+                </p>
+
+                <footer>
+                    <p class="mt-3 text-xs font-medium text-stone-700">
+                        No payment is required until the reservation is confirmed.
+                    </p>
+                </footer>
+            </article>
+
+
+            <!-- Trust Information -->
+            <section class="border-b border-stone-200 p-6">
+                <header>
+                    <h2
+                        id="trust-information-heading"
+                        class="font-serif text-xl font-medium text-stone-900"
+                    >
+                        Book with confidence
+                    </h2>
+                </header>
+
+                <ul class="mt-5 space-y-3 text-xs text-stone-600">
+                    <li class="flex items-center gap-3">
+                        <i class="bx bx-shield-quarter text-base text-[#a67c37]"></i>
+                        Secure reservation
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <i class="bx bx-badge-check text-base text-[#a67c37]"></i>
+                        Best price guarantee
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <i class="bx bx-support text-base text-[#a67c37]"></i>
+                        24/7 guest support
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <i class="bx bx-calendar-check text-base text-[#a67c37]"></i>
+                        Free cancellation on selected rooms
+                    </li>
+                </ul>
+            </section>
+
+
+            <!-- Need Help -->
+            <article class="border-b border-stone-200 p-6">
+                <header>
+                    <h2
+                        id="help-heading"
+                        class="font-serif text-xl font-medium text-stone-900"
+                    >
+                        Need help?
+                    </h2>
+                </header>
+
+                <p class="mt-3 text-xs leading-6 text-stone-600">
+                    Our reservations team is available to help you plan your stay.
+                </p>
+
+                <address class="mt-4 space-y-3 not-italic text-xs">
+                    <p class="flex items-center gap-3">
+                        <i class="bx bx-envelope text-base text-[#a67c37]"></i>
+
+                        <a
+                            href="mailto:reservations@maisonelan.com"
+                            class="text-stone-600 transition hover:text-[#a67c37]"
+                        >
+                            reservations@maisonelan.com
+                        </a>
+                    </p>
+
+                    <p class="flex items-center gap-3">
+                        <i class="bx bx-phone text-base text-[#a67c37]"></i>
+
+                        <a
+                            href="tel:+1234567890"
+                            class="text-stone-600 transition hover:text-[#a67c37]"
+                        >
+                            +1 234 567 890
+                        </a>
+                    </p>
+                </address>
+            </article>
+
+
+            <!-- Booking Policies -->
+            <section class="p-6">
+                <header>
+                    <h2
+                        id="booking-policies-heading"
+                        class="font-serif text-xl font-medium text-stone-900"
+                    >
+                        Booking policies
+                    </h2>
+                </header>
+
+                <dl class="mt-5 space-y-4 text-xs">
+                    <section class="grid grid-cols-[100px_1fr] gap-4">
+                        <dt class="font-medium text-stone-700">
+                            Check-in
+                        </dt>
+
+                        <dd class="text-stone-500">
+                            From 2:00 PM
+                        </dd>
+                    </section>
+
+                    <section class="grid grid-cols-[100px_1fr] gap-4">
+                        <dt class="font-medium text-stone-700">
+                            Check-out
+                        </dt>
+
+                        <dd class="text-stone-500">
+                            Before 12:00 PM
+                        </dd>
+                    </section>
+
+                    <section class="grid grid-cols-[100px_1fr] gap-4">
+                        <dt class="font-medium text-stone-700">
+                            Cancellation
+                        </dt>
+
+                        <dd class="text-stone-500">
+                            Free cancellation up to 7 days before arrival.
+                        </dd>
+                    </section>
+
+                    <section class="grid grid-cols-[100px_1fr] gap-4">
+                        <dt class="font-medium text-stone-700">
+                            Children
+                        </dt>
+
+                        <dd class="text-stone-500">
+                            Children of all ages are welcome.
+                        </dd>
+                    </section>
+
+                    <section class="grid grid-cols-[100px_1fr] gap-4">
+                        <dt class="font-medium text-stone-700">
+                            Pets
+                        </dt>
+
+                        <dd class="text-stone-500">
+                            Pets are not permitted.
+                        </dd>
+                    </section>
+                </dl>
+            </section>
+        </section>
+    </aside>
+</section>
+</main>
+
+
+  <!-- Footer -->
+<footer class="bg-[#151515] px-6 py-8 text-stone-300 lg:px-8 lg:py-10">
+    <section class="mx-auto max-w-7xl">
+
+        <!-- Footer Content -->
+        <section
+            class="grid gap-8 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1.2fr] lg:gap-6"
+        >
+
+            <!-- Brand -->
+            <section>
+                <a
+                    href="index.html"
+                    class="inline-block"
+                >
+                    <i
+                        class="bx bx-crown block text-center text-xs text-[#b98a32]"
+                        aria-hidden="true"
+                    ></i>
+
+                    <strong class="mt-1 block font-serif text-sm font-medium tracking-[0.22em] text-white">
+                        MAISON ÉLAN
+                    </strong>
+
+                    <span class="mt-1 block text-center text-[8px] uppercase tracking-[0.32em] text-stone-500">
+                        Hotels &amp; Resorts
+                    </span>
+                </a>
+
+                <p class="mt-5 text-xs leading-5 text-stone-400">
+                    Exceptional stays.
+                    <br>
+                    Extraordinary experiences.
+                </p>
+
+                <!-- Social Links -->
+                <nav
+                    aria-label="Social media"
+                    class="mt-4"
+                >
+                    <ul class="flex items-center gap-4">
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="Instagram"
+                                class="text-sm text-stone-400 transition hover:text-[#b98a32]"
+                            >
+                                <i
+                                    class="bx bxl-instagram"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="Facebook"
+                                class="text-sm text-stone-400 transition hover:text-[#b98a32]"
+                            >
+                                <i
+                                    class="bx bxl-facebook"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="Pinterest"
+                                class="text-sm text-stone-400 transition hover:text-[#b98a32]"
+                            >
+                                <i
+                                    class="bx bxl-pinterest-alt"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="YouTube"
+                                class="text-sm text-stone-400 transition hover:text-[#b98a32]"
+                            >
+                                <i
+                                    class="bx bxl-youtube"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <!-- Explore -->
+            <section>
+                <h2 class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#b98a32]">
+                    Explore
+                </h2>
+
+                <nav
+                    aria-label="Explore navigation"
+                    class="mt-3"
+                >
+                    <ul class="space-y-1.5 text-xs">
+                        <li>
+                            <a
+                                href="index.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="hotels.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Hotels
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="hotel-details.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Experiences
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Offers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="contact.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <!-- Company -->
+            <section>
+                <h2 class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#b98a32]">
+                    Company
+                </h2>
+
+                <nav
+                    aria-label="Company navigation"
+                    class="mt-3"
+                >
+                    <ul class="space-y-1.5 text-xs">
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Careers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Press
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Sustainability
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Terms &amp; Conditions
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <!-- Support -->
+            <section>
+                <h2 class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#b98a32]">
+                    Support
+                </h2>
+
+                <nav
+                    aria-label="Support navigation"
+                    class="mt-3"
+                >
+                    <ul class="space-y-1.5 text-xs">
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Help Center
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#faq-heading"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                FAQs
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="booking.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Booking Terms
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <!-- Contact -->
+            <section>
+                <h2 class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#b98a32]">
+                    Contact
+                </h2>
+
+                <address class="mt-3 space-y-2.5 text-xs not-italic text-stone-400">
+
+                    <!-- Phone -->
+                    <p class="flex items-center gap-2.5">
+                        <i
+                            class="bx bx-phone-call text-sm text-[#b98a32]"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="tel:+1234567890"
+                            class="transition hover:text-[#b98a32]"
+                        >
+                            +1 234 567 890
+                        </a>
+                    </p>
+
+                    <!-- Email -->
+                    <p class="flex items-center gap-2.5">
+                        <i
+                            class="bx bx-envelope text-sm text-[#b98a32]"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="mailto:hello@maisonelan.com"
+                            class="transition hover:text-[#b98a32]"
+                        >
+                            hello@maisonelan.com
+                        </a>
+                    </p>
+
+                    <!-- Address -->
+                    <p class="flex items-start gap-2.5 leading-5">
+                        <i
+                            class="bx bx-map text-sm text-[#b98a32]"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            123 Ocean Drive
+                            <br>
+                            Miami, FL 33139
+                        </span>
+                    </p>
+
+                </address>
+            </section>
+
+        </section>
+
+
+        <!-- Copyright -->
+        <section class="mt-7">
+            <p class="text-center text-[10px] text-stone-500">
+                © 2026 Maison Élan. All rights reserved.
+            </p>
+        </section>
+
+    </section>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Nova Forge</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+        <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+/>
+</head>
+<body class="bg-[#080b16]">
+    <header class="relative z-50 border-b border-white/5 bg-[#030912]">
+
+    <nav
+        class="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-6 sm:px-8 lg:px-10"
+        aria-label="Main navigation"
+    >
+
+        <!-- ==========================================================
+             LOGO
+        =========================================================== -->
+        <a
+            href="index.html"
+            class="flex items-center gap-2.5"
+            aria-label="Nova Forge Home"
+        >
+            <!-- Logo Icon -->
+            <svg
+                class="h-7 w-7"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+                <path
+                    d="M7 4H13L25 20V28H19L7 12V4Z"
+                    fill="#155DFC"
+                />
+                <path
+                    d="M7 12L13 20V28H7V12Z"
+                    fill="#0A3CA8"
+                />
+                <path
+                    d="M19 4H25V20L19 12V4Z"
+                    fill="#0B4FD7"
+                />
+            </svg>
+
+            <!-- Brand -->
+            <span class="text-[13px] font-semibold uppercase tracking-[0.08em] text-white">
+                NOVA FORGE
+            </span>
+        </a>
+
+
+        <!-- ==========================================================
+             HEADER ACTIONS
+             Get in touch + Hamburger
+        =========================================================== -->
+        <section class="flex items-center gap-3">
+
+            <!-- ======================================================
+                 GET IN TOUCH
+            ======================================================= -->
+            <a
+                        href="contact.html"
+                        class="flex h-10 w-10 items-center justify-center rounded-md text-white/70 transition hover:bg-white/5 hover:text-white"
+                        aria-label="Get in touch"
+                    >
+                        <i class="bx bx-envelope text-xl"></i>
+
+                <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                >
+                    <path d="M5 12H19" />
+                    <path d="M13 6L19 12L13 18" />
+                </svg>
+            </a>
+
+
+            <!-- ======================================================
+                 HAMBURGER MENU
+            ======================================================= -->
+            <details class="relative">
+
+                <!-- Hamburger Button -->
+                <summary
+                    class="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-md text-white/70 transition hover:bg-white/5 hover:text-white [&::-webkit-details-marker]:hidden"
+                    aria-label="Open navigation menu"
+                >
+                    <svg
+                        class="h-5 w-5"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        aria-hidden="true"
+                    >
+                        <path d="M5 7H19" />
+                        <path d="M5 12H19" />
+                        <path d="M5 17H19" />
+                    </svg>
+                </summary>
+
+
+                <!-- ==================================================
+                     NAVIGATION DRAWER
+                     No logo
+                     No Get in touch
+                     No second header
+                =================================================== -->
+                <aside
+                    class="absolute right-0 top-12 z-[100] w-[280px] border border-white/5 bg-[#07101d] p-5 shadow-2xl sm:w-[320px]"
+                    aria-label="Navigation drawer"
+                >
+
+                    <!-- Navigation Links -->
+                    <nav aria-label="Menu navigation">
+
+                        <ul class="space-y-1">
+
+                            <!-- Home -->
+                            <li>
+                                <a
+                                    href="../index.html"
+                                      class="flex items-center gap-4 rounded-md px-4 py-3.5 text-sm font-medium text-white/65 transition hover:bg-white/5 hover:text-white"
+                                >
+                                    <svg
+                                        class="h-5 w-5"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        aria-hidden="true"
+                                    >
+                                        <path d="M3 10.5L12 3L21 10.5V21H3V10.5Z" />
+                                        <path d="M9 21V14H15V21" />
+                                    </svg>
+
+                                    <span>Home</span>
+                                </a>
+                            </li>
+
+
+                            <!-- About -->
+                            <li>
+                                <a
+                                    href="../pages/about.html"
+                                    class="flex items-center gap-4 rounded-md px-4 py-3.5 text-sm font-medium text-white/65 transition hover:bg-white/5 hover:text-white"
+                                >
+                                    <svg
+                                        class="h-5 w-5"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        aria-hidden="true"
+                                    >
+                                        <circle cx="12" cy="7" r="3" />
+                                        <path d="M5 21C5.8 16.8 8.1 15 12 15C15.9 15 18.2 16.8 19 21" />
+                                    </svg>
+
+                                    <span>About</span>
+                                </a>
+                            </li>
+
+
+                            <!-- Services -->
+                            <li>
+                                <a
+                                    href="../pages/services.html"
+                                 class="flex items-center gap-4 rounded-md bg-[#101f39] px-4 py-3.5 text-sm font-medium text-[#3b82f6] transition hover:bg-[#142744]"
+                                >
+                                    <svg
+                                        class="h-5 w-5"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        aria-hidden="true"
+                                    >
+                                        <rect x="4" y="4" width="6" height="6" />
+                                        <rect x="14" y="4" width="6" height="6" />
+                                        <rect x="4" y="14" width="6" height="6" />
+                                        <rect x="14" y="14" width="6" height="6" />
+                                    </svg>
+
+                                    <span>Services</span>
+                                </a>
+                            </li>
+
+
+                            <!-- Work -->
+                            <li>
+                                <a
+                                    href="../pages/work.html"
+                                     class="flex items-center gap-4 rounded-md px-4 py-3.5 text-sm font-medium text-white/65 transition hover:bg-white/5 hover:text-white"
+                                >
+                                    <svg
+                                        class="h-5 w-5"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        aria-hidden="true"
+                                    >
+                                        <rect x="3" y="7" width="18" height="13" rx="2" />
+                                        <path d="M8 7V5C8 4.4 8.4 4 9 4H15C15.6 4 16 4.4 16 5V7" />
+                                        <path d="M3 12H21" />
+                                    </svg>
+
+                                    <span>Work</span>
+                                </a>
+                            </li>
+
+
+                            <!-- Insights -->
+                            <li>
+                                <a
+                                    href="../pages/insights.html"
+                                    class="flex items-center gap-4 rounded-md px-4 py-3.5 text-sm font-medium text-white/65 transition hover:bg-white/5 hover:text-white"
+                                >
+                                    <svg
+                                        class="h-5 w-5"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        aria-hidden="true"
+                                    >
+                                        <path d="M5 19V13" />
+                                        <path d="M10 19V9" />
+                                        <path d="M15 19V5" />
+                                        <path d="M20 19V11" />
+                                    </svg>
+
+                                    <span>Insights</span>
+                                </a>
+                            </li>
+
+
+                            <!-- Contact -->
+                            <li>
+                                <a
+                                    href="../pages/contact.html"
+                                    class="flex items-center gap-4 rounded-md px-4 py-3.5 text-sm font-medium text-white/65 transition hover:bg-white/5 hover:text-white"
+                                >
+                                    <svg
+                                        class="h-5 w-5"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        aria-hidden="true"
+                                    >
+                                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                                        <path d="M3 7L12 13L21 7" />
+                                    </svg>
+
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </aside>
+
+            </details>
+
+        </section>
+
+    </nav>
+
+    <main>
+
+    <!-- ==========================================================
+     SERVICES HERO
+=========================================================== -->
+<section
+    class="relative isolate overflow-hidden min-h-[320px] bg-[#030a14] px-6 py-16 sm:px-8 lg:px-12"
+>
+
+    <header
+        class="relative z-10 mx-auto flex max-w-7xl flex-col justify-center lg:min-h-[288px] lg:w-full lg:pr-[45%]"
+    >
+
+        <!-- Eyebrow -->
+        <p
+            class="mb-4 text-[10px] font-medium uppercase tracking-[0.12em] text-blue-500 sm:text-xs"
+        >
+            Our services
+        </p>
+
+
+        <!-- Main Heading -->
+        <h1
+            class="max-w-[560px] text-4xl font-semibold leading-[1.05] tracking-[-0.035em] text-white sm:text-5xl lg:text-[2.8rem]"
+        >
+            End-to-end solutions
+            <br>
+            for digital impact
+        </h1>
+
+
+        <!-- Description -->
+        <p
+            class="mt-5 max-w-[500px] text-sm leading-6 text-slate-400 sm:text-[15px]"
+        >
+            From strategy and design to engineering and growth,
+            we help ambitious companies build, launch, and scale
+            digital products that make a difference.
+        </p>
+
+    </header>
+
+
+    <!-- Hero Visual -->
+    <figure
+        class="pointer-events-none absolute inset-y-0 right-0 z-0 w-full lg:w-[58%]"
+    >
+
+        <img
+            src="images/services-hero.png"
+            alt="Nova Forge digital technology illustration"
+            class="h-full w-full object-cover object-center lg:object-right"
+        >
+
+    </figure>
+
+</section>
+
+
+   <!-- ==========================================================
+     WHAT WE DO
+=========================================================== -->
+<section
+    class="bg-[#030a14] px-6 py-14 sm:px-8 lg:px-12 lg:py-16"
+>
+
+    <header
+        class="mx-auto mb-8 flex max-w-7xl flex-col gap-6 sm:mb-10 lg:flex-row lg:items-center lg:justify-between"
+    >
+
+        <!-- Section Heading -->
+        <section class="max-w-xl">
+
+            <h2
+                class="text-3xl font-semibold leading-tight tracking-[-0.03em] text-white sm:text-4xl"
+            >
+                What we do
+            </h2>
+
+            <p
+                class="mt-2 max-w-md text-xs leading-5 text-slate-400 sm:text-sm"
+            >
+                We combine strategy, design, and engineering to deliver
+                solutions that drive real business outcomes.
+            </p>
+
+        </section>
+
+
+        <!-- View Our Work -->
+        <a
+            href="work.html"
+            class="inline-flex w-fit items-center gap-3 rounded-md border border-slate-700/70 px-5 py-3 text-xs font-medium text-slate-300 transition duration-300 hover:border-blue-500/60 hover:bg-blue-500/5 hover:text-white"
+        >
+            View our work
+
+            <i
+                class="bx bx-right-arrow-alt text-base text-slate-300 transition-transform duration-300 group-hover:translate-x-1"
+                aria-hidden="true"
+            ></i>
+        </a>
+
+    </header>
+
+
+    <!-- ======================================================
+         SERVICES GRID
+    ======================================================= -->
+    <section
+        aria-label="Our services"
+        class="mx-auto grid max-w-7xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+    >
+
+
+        <!-- ==================================================
+             SOFTWARE ENGINEERING
+        =================================================== -->
+        <article
+            class="flex min-h-[275px] flex-col rounded-lg border border-slate-800/70 bg-[#07111f]/90 p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-500/30 hover:bg-[#091527]"
+        >
+
+            <figure
+                class="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-blue-600/80 text-xl text-blue-500"
+                aria-hidden="true"
+            >
+                <i class="bx bx-code-alt"></i>
+            </figure>
+
+            <h3
+                class="text-base font-medium tracking-tight text-white sm:text-lg"
+            >
+                Software Engineering
+            </h3>
+
+            <p
+                class="mt-3 max-w-sm text-xs leading-[1.7] text-slate-400 sm:text-sm"
+            >
+                Build robust, scalable, and secure web and mobile
+                applications tailored to your business needs.
+            </p>
+
+            <a
+                href="#"
+                class="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-xs font-medium text-blue-500 transition duration-300 hover:text-blue-400"
+            >
+                Learn more
+
+                <i
+                    class="bx bx-right-arrow-alt text-base transition-transform duration-300"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+        </article>
+
+
+        <!-- ==================================================
+             DIGITAL STRATEGY
+        =================================================== -->
+        <article
+            class="flex min-h-[275px] flex-col rounded-lg border border-slate-800/70 bg-[#07111f]/90 p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-500/30 hover:bg-[#091527]"
+        >
+
+            <figure
+                class="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-blue-600/80 text-xl text-blue-500"
+                aria-hidden="true"
+            >
+                <i class="bx bx-bar-chart-alt-2"></i>
+            </figure>
+
+            <h3
+                class="text-base font-medium tracking-tight text-white sm:text-lg"
+            >
+                Digital Strategy
+            </h3>
+
+            <p
+                class="mt-3 max-w-sm text-xs leading-[1.7] text-slate-400 sm:text-sm"
+            >
+                Data-driven strategies and roadmaps that align
+                technology with business goals and market opportunities.
+            </p>
+
+            <a
+                href="#"
+                class="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-xs font-medium text-blue-500 transition duration-300 hover:text-blue-400"
+            >
+                Learn more
+
+                <i
+                    class="bx bx-right-arrow-alt text-base transition-transform duration-300"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+        </article>
+
+
+        <!-- ==================================================
+             PRODUCT DESIGN
+        =================================================== -->
+        <article
+            class="flex min-h-[275px] flex-col rounded-lg border border-slate-800/70 bg-[#07111f]/90 p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-500/30 hover:bg-[#091527]"
+        >
+
+            <figure
+                class="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-blue-600/80 text-xl text-blue-500"
+                aria-hidden="true"
+            >
+                <i class="bx bx-pen"></i>
+            </figure>
+
+            <h3
+                class="text-base font-medium tracking-tight text-white sm:text-lg"
+            >
+                Product Design
+            </h3>
+
+            <p
+                class="mt-3 max-w-sm text-xs leading-[1.7] text-slate-400 sm:text-sm"
+            >
+                Beautiful, intuitive designs that create delightful
+                user experiences and drive engagement.
+            </p>
+
+            <a
+                href="#"
+                class="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-xs font-medium text-blue-500 transition duration-300 hover:text-blue-400"
+            >
+                Learn more
+
+                <i
+                    class="bx bx-right-arrow-alt text-base transition-transform duration-300"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+        </article>
+
+
+        <!-- ==================================================
+             CLOUD & DEVOPS
+        =================================================== -->
+        <article
+            class="flex min-h-[275px] flex-col rounded-lg border border-slate-800/70 bg-[#07111f]/90 p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-500/30 hover:bg-[#091527]"
+        >
+
+            <figure
+                class="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-blue-600/80 text-xl text-blue-500"
+                aria-hidden="true"
+            >
+                <i class="bx bx-cloud"></i>
+            </figure>
+
+            <h3
+                class="text-base font-medium tracking-tight text-white sm:text-lg"
+            >
+                Cloud &amp; DevOps
+            </h3>
+
+            <p
+                class="mt-3 max-w-sm text-xs leading-[1.7] text-slate-400 sm:text-sm"
+            >
+                Modernize your infrastructure with cloud-native
+                solutions and streamlined DevOps practices.
+            </p>
+
+            <a
+                href="#"
+                class="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-xs font-medium text-blue-500 transition duration-300 hover:text-blue-400"
+            >
+                Learn more
+
+                <i
+                    class="bx bx-right-arrow-alt text-base transition-transform duration-300"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+        </article>
+
+
+        <!-- ==================================================
+             QUALITY ASSURANCE
+        =================================================== -->
+        <article
+            class="flex min-h-[275px] flex-col rounded-lg border border-slate-800/70 bg-[#07111f]/90 p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-500/30 hover:bg-[#091527]"
+        >
+
+            <figure
+                class="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-blue-600/80 text-xl text-blue-500"
+                aria-hidden="true"
+            >
+                <i class="bx bx-check-shield"></i>
+            </figure>
+
+            <h3
+                class="text-base font-medium tracking-tight text-white sm:text-lg"
+            >
+                Quality Assurance
+            </h3>
+
+            <p
+                class="mt-3 max-w-sm text-xs leading-[1.7] text-slate-400 sm:text-sm"
+            >
+                Ensure reliability and performance with comprehensive
+                testing and quality engineering.
+            </p>
+
+            <a
+                href="#"
+                class="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-xs font-medium text-blue-500 transition duration-300 hover:text-blue-400"
+            >
+                Learn more
+
+                <i
+                    class="bx bx-right-arrow-alt text-base transition-transform duration-300"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+        </article>
+
+
+        <!-- ==================================================
+             GROWTH & OPTIMIZATION
+        =================================================== -->
+        <article
+            class="flex min-h-[275px] flex-col rounded-lg border border-slate-800/70 bg-[#07111f]/90 p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-500/30 hover:bg-[#091527]"
+        >
+
+            <figure
+                class="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-blue-600/80 text-xl text-blue-500"
+                aria-hidden="true"
+            >
+                <i class="bx bx-trending-up"></i>
+            </figure>
+
+            <h3
+                class="text-base font-medium tracking-tight text-white sm:text-lg"
+            >
+                Growth &amp; Optimization
+            </h3>
+
+            <p
+                class="mt-3 max-w-sm text-xs leading-[1.7] text-slate-400 sm:text-sm"
+            >
+                Optimize performance, drive growth, and maximize ROI
+                with data and experimentation.
+            </p>
+
+            <a
+                href="#"
+                class="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-xs font-medium text-blue-500 transition duration-300 hover:text-blue-400"
+            >
+                Learn more
+
+                <i
+                    class="bx bx-right-arrow-alt text-base transition-transform duration-300"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+        </article>
+
+    </section>
+
+</section>
+
+<!-- ==========================================================
+     OUR APPROACH
+=========================================================== -->
+<section class="bg-[#030a14] px-5 py-8 sm:px-8 lg:px-10">
+
+    <section
+        class="mx-auto max-w-7xl rounded-lg border border-slate-800/70 bg-[#07111f] px-6 py-8 sm:px-8 lg:flex lg:items-center lg:px-5 lg:py-8"
+    >
+
+        <!-- ==================================================
+             APPROACH INTRODUCTION
+        =================================================== -->
+        <header
+            class="shrink-0 lg:w-[30%] lg:pr-6"
+        >
+
+            <p
+                class="text-[10px] font-medium uppercase tracking-wide text-blue-500"
+            >
+                Our approach
+            </p>
+
+            <h2
+                class="mt-3 text-2xl font-medium leading-[1.15] tracking-tight text-white sm:text-3xl"
+            >
+                A proven process
+                <br>
+                that delivers results
+            </h2>
+
+            <p
+                class="mt-4 max-w-[270px] text-xs leading-[1.65] text-slate-400"
+            >
+                We follow a collaborative and iterative approach
+                to ensure transparency, quality, and measurable
+                impact at every step.
+            </p>
+
+        </header>
+
+
+        <!-- ==================================================
+             PROCESS
+        =================================================== -->
+        <ol
+            class="relative mt-8 grid grid-cols-2 gap-y-8 border-t border-slate-800/60 pt-8 sm:grid-cols-4 sm:gap-y-0 sm:border-t-0 sm:pt-0 lg:mt-0 lg:flex lg:flex-1 lg:items-start"
+        >
+
+            <!-- Continuous connecting line -->
+            <span
+                class="pointer-events-none absolute left-[12.5%] right-[12.5%] top-[28px] hidden h-px bg-blue-600/60 lg:block"
+                aria-hidden="true"
+            ></span>
+
+
+            <!-- ==================================================
+                 DISCOVER
+            =================================================== -->
+            <li
+                class="relative z-10 flex flex-col items-center px-2 text-center lg:flex-1"
+            >
+
+                <figure
+                    class="flex h-14 w-14 items-center justify-center rounded-full border border-blue-600 bg-[#07111f] text-[23px] text-blue-500"
+                    aria-hidden="true"
+                >
+                    <i class="bx bx-search"></i>
+                </figure>
+
+                <h3
+                    class="mt-4 text-xs font-medium text-white sm:text-sm"
+                >
+                    Discover
+                </h3>
+
+                <p
+                    class="mt-2 max-w-[135px] text-[10px] leading-[1.6] text-slate-400 sm:text-[11px]"
+                >
+                    We understand your
+                    business, users, and
+                    goals.
+                </p>
+
+            </li>
+
+
+            <!-- ==================================================
+                 STRATEGIZE
+            =================================================== -->
+            <li
+                class="relative z-10 flex flex-col items-center px-2 text-center lg:flex-1"
+            >
+
+                <figure
+                    class="flex h-14 w-14 items-center justify-center rounded-full border border-blue-600 bg-[#07111f] text-[23px] text-blue-500"
+                    aria-hidden="true"
+                >
+                    <i class="bx bx-file"></i>
+                </figure>
+
+                <h3
+                    class="mt-4 text-xs font-medium text-white sm:text-sm"
+                >
+                    Strategize
+                </h3>
+
+                <p
+                    class="mt-2 max-w-[135px] text-[10px] leading-[1.6] text-slate-400 sm:text-[11px]"
+                >
+                    We define the right
+                    strategy, roadmap, and
+                    success metrics.
+                </p>
+
+            </li>
+
+
+            <!-- ==================================================
+                 BUILD
+            =================================================== -->
+            <li
+                class="relative z-10 flex flex-col items-center px-2 text-center lg:flex-1"
+            >
+
+                <figure
+                    class="flex h-14 w-14 items-center justify-center rounded-full border border-blue-600 bg-[#07111f] text-[23px] text-blue-500"
+                    aria-hidden="true"
+                >
+                    <i class="bx bx-code-alt"></i>
+                </figure>
+
+                <h3
+                    class="mt-4 text-xs font-medium text-white sm:text-sm"
+                >
+                    Build
+                </h3>
+
+                <p
+                    class="mt-2 max-w-[135px] text-[10px] leading-[1.6] text-slate-400 sm:text-[11px]"
+                >
+                    We design, engineer,
+                    and test high-quality
+                    solutions.
+                </p>
+
+            </li>
+
+
+            <!-- ==================================================
+                 OPTIMIZE
+            =================================================== -->
+            <li
+                class="relative z-10 flex flex-col items-center px-2 text-center lg:flex-1"
+            >
+
+                <figure
+                    class="flex h-14 w-14 items-center justify-center rounded-full border border-blue-600 bg-[#07111f] text-[23px] text-blue-500"
+                    aria-hidden="true"
+                >
+                    <i class="bx bx-bar-chart-alt-2"></i>
+                </figure>
+
+                <h3
+                    class="mt-4 text-xs font-medium text-white sm:text-sm"
+                >
+                    Optimize
+                </h3>
+
+                <p
+                    class="mt-2 max-w-[135px] text-[10px] leading-[1.6] text-slate-400 sm:text-[11px]"
+                >
+                    We launch, measure,
+                    and continuously
+                    improve performance.
+                </p>
+
+            </li>
+
+        </ol>
+
+    </section>
+
+</section>
+
+   <!-- ==========================================================
+     FEATURED WORK
+=========================================================== -->
+<section class="bg-[#030a14] px-5 py-8 sm:px-8 lg:px-10">
+
+    <section
+        class="mx-auto max-w-7xl rounded-lg border border-slate-800/70 bg-[#07111f] p-5 sm:p-6 lg:grid lg:grid-cols-[180px_1fr] lg:gap-5 lg:p-5"
+    >
+
+        <!-- ==================================================
+             FEATURED WORK INTRO
+        =================================================== -->
+        <header class="flex flex-col justify-center">
+
+            <p
+                class="text-[9px] font-medium uppercase tracking-[0.1em] text-blue-500 sm:text-[10px]"
+            >
+                Featured work
+            </p>
+
+            <h2
+                class="mt-3 text-2xl font-medium leading-[1.15] tracking-[-0.035em] text-white sm:text-[27px]"
+            >
+                Solutions that
+                <br>
+                make an impact
+            </h2>
+
+            <p
+                class="mt-4 text-[11px] leading-[1.65] text-slate-400 sm:text-xs"
+            >
+                We partner with innovative companies to build digital
+                products that drive growth and transformation.
+            </p>
+
+            <a
+                href="work.html"
+                class="group mt-5 inline-flex w-fit items-center gap-4 rounded-md border border-slate-700/80 px-4 py-2.5 text-[10px] font-medium text-slate-300 transition duration-300 hover:border-blue-500/60 hover:bg-blue-500/5 hover:text-white sm:text-xs"
+            >
+                See all projects
+
+                <span
+                    aria-hidden="true"
+                    class="text-sm transition-transform duration-300 group-hover:translate-x-1"
+                >
+                    →
+                </span>
+            </a>
+
+        </header>
+
+
+        <!-- ==================================================
+             FEATURED PROJECTS
+        =================================================== -->
+        <section
+            aria-label="Featured projects"
+            class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:mt-0 lg:grid-cols-3"
+        >
+
+
+            <!-- ==================================================
+                 NEXTGEN BANKING
+            =================================================== -->
+            <article
+                class="overflow-hidden rounded-lg border border-slate-800/70 bg-[#0a1524] transition duration-300 hover:-translate-y-1 hover:border-blue-500/30"
+            >
+
+                <figure class="h-[190px] overflow-hidden sm:h-[180px]">
+
+                    <img
+                        src="images/nextgen-banking.jpg"
+                        alt="NextGen Banking Platform"
+                        class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                    >
+
+                </figure>
+
+                <section class="p-4">
+
+                    <p
+                        class="inline-block rounded-sm bg-blue-950/80 px-2 py-1 text-[8px] font-medium uppercase tracking-wide text-blue-400"
+                    >
+                        Fintech
+                    </p>
+
+                    <h3
+                        class="mt-3 text-xs font-medium text-white sm:text-sm"
+                    >
+                        NextGen Banking Platform
+                    </h3>
+
+                    <p
+                        class="mt-2 text-[10px] leading-[1.6] text-slate-400 sm:text-[11px]"
+                    >
+                        A secure, scalable platform serving millions
+                        of users worldwide.
+                    </p>
+
+                </section>
+
+            </article>
+
+
+            <!-- ==================================================
+                 TELEHEALTH
+            =================================================== -->
+            <article
+                class="overflow-hidden rounded-lg border border-slate-800/70 bg-[#0a1524] transition duration-300 hover:-translate-y-1 hover:border-blue-500/30"
+            >
+
+                <figure class="h-[190px] overflow-hidden sm:h-[180px]">
+
+                    <img
+                        src="images/telehealth.jpg"
+                        alt="Telehealth Solution"
+                        class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                    >
+
+                </figure>
+
+                <section class="p-4">
+
+                    <p
+                        class="inline-block rounded-sm bg-blue-950/80 px-2 py-1 text-[8px] font-medium uppercase tracking-wide text-blue-400"
+                    >
+                        Healthcare
+                    </p>
+
+                    <h3
+                        class="mt-3 text-xs font-medium text-white sm:text-sm"
+                    >
+                        Telehealth Solution
+                    </h3>
+
+                    <p
+                        class="mt-2 text-[10px] leading-[1.6] text-slate-400 sm:text-[11px]"
+                    >
+                        Connecting patients and doctors through
+                        seamless digital experiences.
+                    </p>
+
+                </section>
+
+            </article>
+
+
+            <!-- ==================================================
+                 COMMERCE REDEFINED
+            =================================================== -->
+            <article
+                class="overflow-hidden rounded-lg border border-slate-800/70 bg-[#0a1524] transition duration-300 hover:-translate-y-1 hover:border-blue-500/30"
+            >
+
+                <figure class="h-[190px] overflow-hidden sm:h-[180px]">
+
+                    <img
+                        src="images/ecommerce-platform.jpg"
+                        alt="Commerce Redefined"
+                        class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                    >
+
+                </figure>
+
+                <section class="p-4">
+
+                    <p
+                        class="inline-block rounded-sm bg-blue-950/80 px-2 py-1 text-[8px] font-medium uppercase tracking-wide text-blue-400"
+                    >
+                        E-commerce
+                    </p>
+
+                    <h3
+                        class="mt-3 text-xs font-medium text-white sm:text-sm"
+                    >
+                        Commerce Redefined
+                    </h3>
+
+                    <p
+                        class="mt-2 text-[10px] leading-[1.6] text-slate-400 sm:text-[11px]"
+                    >
+                        A high-performance platform that increased
+                        conversions by 40%.
+                    </p>
+
+                </section>
+
+            </article>
+
+        </section>
+
+    </section>
+
+</section>
+
+   <!-- ==========================================================
+     CALL TO ACTION
+=========================================================== -->
+<section
+    class="bg-[#030a14] px-5 py-8 sm:px-8 lg:px-10"
+>
+
+    <section
+        class="mx-auto flex max-w-7xl flex-col gap-6 overflow-hidden rounded-lg border border-blue-900/40 bg-gradient-to-r from-[#06245c] via-[#07162d] to-[#07111f] px-6 py-6 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-7 lg:py-6"
+    >
+
+        <!-- ==================================================
+             CTA HEADING
+        =================================================== -->
+        <header class="shrink-0 lg:max-w-[360px]">
+
+            <p
+                class="text-[9px] font-medium uppercase tracking-[0.1em] text-blue-500 sm:text-[10px]"
+            >
+                Ready to build something great?
+            </p>
+
+            <h2
+                class="mt-2 text-xl font-medium leading-[1.15] tracking-[-0.025em] text-white sm:text-2xl"
+            >
+                Let's build the right solution
+                <br>
+                for your business
+            </h2>
+
+        </header>
+
+
+        <!-- ==================================================
+             CTA DESCRIPTION
+        =================================================== -->
+        <p
+            class="max-w-[270px] text-xs leading-[1.6] text-slate-400"
+        >
+            Whether you're starting fresh or scaling an existing
+            product, we're here to help.
+        </p>
+
+
+        <!-- ==================================================
+             CTA BUTTON
+        =================================================== -->
+        <a
+            href="contact.html"
+            class="group inline-flex shrink-0 items-center justify-between gap-8 rounded-md bg-blue-600 px-5 py-3 text-xs font-medium text-white transition duration-300 hover:bg-blue-500 lg:min-w-[140px]"
+        >
+            <span>
+                Get in touch
+            </span>
+
+            <span
+                aria-hidden="true"
+                class="text-base transition-transform duration-300 group-hover:translate-x-1"
+            >
+                →
+            </span>
+
+        </a>
+
+    </section>
+
+</section>
+
+</main>
+
+
+
+    <!-- ==========================================================
+     FOOTER
+=========================================================== -->
+<footer
+    class="border-t border-white/10 bg-[#030912] px-6 pt-12 sm:px-8 sm:pt-14 lg:px-10 lg:pt-16"
+>
+
+    <!-- ======================================================
+         MAIN FOOTER CONTENT
+    ======================================================= -->
+    <section
+        class="mx-auto grid max-w-[1440px] gap-10 pb-10 lg:grid-cols-[1.35fr_0.7fr_0.7fr_0.7fr_1.4fr] lg:gap-8"
+    >
+
+        <!-- ==================================================
+             BRAND
+        =================================================== -->
+        <section>
+
+            <!-- Brand -->
+            <a
+                href="/"
+                class="inline-flex items-center gap-2.5"
+            >
+
+                <!-- Logo -->
+                <span
+                    class="flex h-8 w-8 items-center justify-center"
+                    aria-hidden="true"
+                >
+                    <svg
+                        class="h-8 w-8"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M7 4H13L25 20V28H19L7 12V4Z"
+                            fill="#155DFC"
+                        />
+                        <path
+                            d="M7 12L13 20V28H7V12Z"
+                            fill="#0A3CA8"
+                        />
+                        <path
+                            d="M19 4H25V20L19 12V4Z"
+                            fill="#0B4FD7"
+                        />
+                    </svg>
+                </span>
+
+                <span
+                    class="text-[15px] font-medium uppercase tracking-[0.04em] text-white"
+                >
+                    Nova Forge
+                </span>
+
+            </a>
+
+
+            <!-- Description -->
+            <p
+                class="mt-4 max-w-[250px] text-xs leading-5 text-white/45"
+            >
+                Digital strategy and engineering
+                for ambitious companies.
+            </p>
+
+
+            <!-- ==================================================
+                 SOCIAL LINKS
+            =================================================== -->
+            <ul class="mt-5 flex items-center gap-3">
+
+                <!-- LinkedIn -->
+                <li>
+                    <a
+                        href="#"
+                        aria-label="LinkedIn"
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-[#101c2d] text-white/80 transition hover:bg-[#155DFC] hover:text-white"
+                    >
+                        <i
+                            class="bx bxl-linkedin text-lg"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+                </li>
+
+
+                <!-- Twitter -->
+                <li>
+                    <a
+                        href="#"
+                        aria-label="Twitter"
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-[#101c2d] text-white/80 transition hover:bg-[#155DFC] hover:text-white"
+                    >
+                        <i
+                            class="bx bxl-twitter text-lg"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+                </li>
+
+
+                <!-- GitHub -->
+                <li>
+                    <a
+                        href="#"
+                        aria-label="GitHub"
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-[#101c2d] text-white/80 transition hover:bg-[#155DFC] hover:text-white"
+                    >
+                        <i
+                            class="bx bxl-github text-lg"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+                </li>
+
+
+                <!-- Dribbble -->
+                <li>
+                    <a
+                        href="#"
+                        aria-label="Dribbble"
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-[#101c2d] text-white/80 transition hover:bg-[#155DFC] hover:text-white"
+                    >
+                        <i
+                            class="bx bxl-dribbble text-lg"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ==================================================
+             COMPANY
+        =================================================== -->
+        <nav aria-label="Company">
+
+            <h3
+                class="text-sm font-medium text-white"
+            >
+                Company
+            </h3>
+
+            <ul class="mt-4 space-y-3">
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-xs text-white/45 transition hover:text-white"
+                    >
+                        About us
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-xs text-white/45 transition hover:text-white"
+                    >
+                        Our work
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-xs text-white/45 transition hover:text-white"
+                    >
+                        Careers
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-xs text-white/45 transition hover:text-white"
+                    >
+                        Insights
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- ==================================================
+             SERVICES
+        =================================================== -->
+        <nav aria-label="Services">
+
+            <h3
+                class="text-sm font-medium text-white"
+            >
+                Services
+            </h3>
+
+            <ul class="mt-4 space-y-3">
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-xs text-white/45 transition hover:text-white"
+                    >
+                        Software engineering
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-xs text-white/45 transition hover:text-white"
+                    >
+                        Digital strategy
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-xs text-white/45 transition hover:text-white"
+                    >
+                        Product design
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- ==================================================
+             RESOURCES
+        =================================================== -->
+        <nav aria-label="Resources">
+
+            <h3
+                class="text-sm font-medium text-white"
+            >
+                Resources
+            </h3>
+
+            <ul class="mt-4 space-y-3">
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-xs text-white/45 transition hover:text-white"
+                    >
+                        Blog
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-xs text-white/45 transition hover:text-white"
+                    >
+                        Case studies
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-xs text-white/45 transition hover:text-white"
+                    >
+                        Guides
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-xs text-white/45 transition hover:text-white"
+                    >
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- ==================================================
+             NEWSLETTER
+        =================================================== -->
+        <form
+            action="#"
+            method="post"
+        >
+
+            <h3
+                class="text-sm font-medium text-white"
+            >
+                Stay updated
+            </h3>
+
+
+            <p
+                class="mt-4 max-w-[280px] text-xs leading-5 text-white/45"
+            >
+                Get insights on product, technology,
+                and strategy.
+            </p>
+
+
+            <!-- Email Input -->
+            <fieldset
+                class="mt-4 flex h-14 overflow-hidden rounded-md border border-white/10 bg-[#0b1524]"
+            >
+
+                <legend class="sr-only">
+                    Newsletter subscription
+                </legend>
+
+                <label
+                    for="newsletter-email"
+                    class="sr-only"
+                >
+                    Email address
+                </label>
+
+                <input
+                    type="email"
+                    id="newsletter-email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                    class="min-w-0 flex-1 bg-transparent px-4 text-xs text-white outline-none placeholder:text-white/35"
+                />
+
+                <button
+                    type="submit"
+                    aria-label="Subscribe"
+                    class="flex w-14 shrink-0 items-center justify-center bg-[#155DFC] text-white transition hover:bg-[#2563eb]"
+                >
+                    <i
+                        class="bx bx-right-arrow-alt text-xl"
+                        aria-hidden="true"
+                    ></i>
+                </button>
+
+            </fieldset>
+
+        </form>
+
+    </section>
+
+
+    <!-- ======================================================
+         FOOTER BOTTOM
+    ======================================================= -->
+    <section
+        class="mx-auto flex max-w-[1440px] flex-col gap-4 border-t border-white/10 py-5 sm:flex-row sm:items-center sm:justify-between"
+    >
+
+        <!-- Copyright -->
+        <p
+            class="text-[11px] text-white/40"
+        >
+            &copy; 2026 Nova Forge. All rights reserved.
+        </p>
+
+
+        <!-- Legal Links -->
+        <nav aria-label="Legal">
+
+            <ul
+                class="flex items-center gap-6"
+            >
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-[11px] text-white/40 transition hover:text-white"
+                    >
+                        Privacy policy
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#"
+                        class="text-[11px] text-white/40 transition hover:text-white"
+                    >
+                        Terms of service
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </section>
+
+</footer>
+
+</header>
+</body>
+</html>

@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | Premium Store</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    
+    <!-- HEADER -->
+
+  <header class="bg-white">
+
+    <aside class="bg-zinc-950 text-white">
+        <p class="py-2 text-center text-sm">
+            Free shipping on all orders over $100
+        </p>
+    </aside>
+
+
+    <nav
+        class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5"
+        aria-label="Main navigation"
+    >
+
+        <a
+            href="index.html"
+            class="text-center"
+        >
+            <span class="block text-xl font-semibold tracking-[0.3em]">
+                PREMIUM
+            </span>
+
+            <span class="block text-xs uppercase tracking-[0.35em] text-amber-600">
+                STORE
+            </span>
+        </a>
+
+
+        <ul class="flex items-center gap-8">
+
+            <li>
+                <a
+                    href="/index.html"
+                     class="text-sm font-medium text-zinc-900 transition hover:text-amber-600"
+                >
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="product.html"
+                    aria-current="page"
+                    class="text-sm font-medium text-amber-600"
+                >
+                    Products
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="/pages/categories.html"
+                    class="text-sm font-medium text-zinc-900 transition hover:text-amber-600"
+                >
+                    Categories
+                </a>
+            </li>
+
+        </ul>
+
+
+        <ul class="flex items-center gap-6">
+
+            <li>
+                <a
+                    href="#"
+                    class="text-sm font-medium text-zinc-900 transition hover:text-amber-600"
+                >
+                    Search
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="#"
+                    class="text-sm font-medium text-zinc-900 transition hover:text-amber-600"
+                >
+                    Cart
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="#"
+                    class="text-sm font-medium text-zinc-900 transition hover:text-amber-600"
+                >
+                    Account
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Page Introduction / Hero -->
+        <!-- Page Introduction -->
+<section
+    aria-labelledby="products-heading"
+    class="mx-auto max-w-[1440px] px-6 pt-6 lg:px-10">
+    <section
+        class="grid overflow-hidden rounded-2xl bg-[#f4f1eb] lg:grid-cols-2">
+
+        <!-- Hero Content -->
+        <header
+            class="flex flex-col justify-center px-8 py-14 sm:px-12 lg:px-14 lg:py-16"
+        >
+            <p
+                class="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-[#b88a3b]"
+            >
+                Premium Products
+            </p>
+
+            <h1
+                id="products-heading"
+                class="max-w-xl text-4xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-[3.5rem]"
+            >
+                Explore our premium collection.
+            </h1>
+
+            <p
+                class="mt-6 max-w-md text-base leading-7 text-slate-600 sm:text-lg"
+            >
+                Browse high-quality products crafted for comfort,
+                design, and everyday excellence.
+            </p>
+        </header>
+
+
+        <!-- Hero Image -->
+        <figure class="min-h-[320px] lg:min-h-[420px]">
+            <img
+                src="images/6.jpg"
+                alt="Black premium leather backpack displayed beside books and a ceramic vase"
+                class="h-full w-full object-cover object-center"
+            >
+        </figure>
+
+    </section>
+</section>
+
+
+        <!-- Product Controls -->
+        <!-- Product Controls -->
+<section
+    aria-labelledby="controls-heading"
+    class="mx-auto max-w-[1440px] px-6 py-10 lg:px-10 lg:py-12"
+>
+    <!-- Section Heading -->
+    <header class="mb-6">
+        <p
+            class="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#b88a3b]"
+        >
+            Filter & Sort
+        </p>
+
+        <h2
+            id="controls-heading"
+            class="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl"
+        >
+            Find the perfect product
+        </h2>
+    </header>
+
+
+    <!-- Product Filters -->
+    <form
+    class="grid gap-5 rounded-2xl bg-[#f7f5f1] p-6 lg:grid-cols-[1.1fr_1fr_1fr]"
+>
+
+    <!-- Search -->
+    <label class="flex min-w-0 flex-col gap-2">
+
+        <span
+            class="h-5 text-sm font-medium text-transparent select-none"
+            aria-hidden="true"
+        >
+            Search
+        </span>
+
+        <span
+            class="flex h-14 items-center gap-3 rounded-xl border border-[#b88a3b] bg-white px-4 shadow-sm"
+        >
+            <svg
+                class="h-5 w-5 shrink-0 text-slate-700"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.7"
+                aria-hidden="true"
+            >
+                <circle cx="11" cy="11" r="6"></circle>
+
+                <path
+                    stroke-linecap="round"
+                    d="m20 20-4.35-4.35"
+                />
+            </svg>
+
+            <input
+                type="search"
+                name="search"
+                placeholder="Search products..."
+                aria-label="Search products"
+                class="min-w-0 flex-1 bg-transparent text-sm text-slate-800 outline-none placeholder:text-slate-400"
+            >
+        </span>
+
+    </label>
+
+
+    <!-- Category -->
+    <label class="flex flex-col gap-2">
+
+        <span class="text-sm font-medium text-slate-700">
+            Category
+        </span>
+
+        <span class="relative">
+
+            <select
+                name="category"
+                class="h-14 w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 pr-12 text-sm text-slate-700 outline-none"
+            >
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home-living">Home & Living</option>
+                <option value="accessories">Accessories</option>
+            </select>
+
+            <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-700"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m6 9 6 6 6-6"
+                />
+            </svg>
+
+        </span>
+
+    </label>
+
+
+    <!-- Sort -->
+    <label class="flex flex-col gap-2">
+
+        <span class="text-sm font-medium text-slate-700">
+            Sort by
+        </span>
+
+        <span class="relative">
+
+            <select
+                name="sort"
+                class="h-14 w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 pr-12 text-sm text-slate-700 outline-none"
+            >
+                <option value="featured">Featured</option>
+                <option value="newest">Newest First</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+
+            <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-700"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m6 9 6 6 6-6"
+                />
+            </svg>
+
+        </span>
+
+    </label>
+
+</form>
+</section>
+
+
+        <!-- Product Collection -->
+      <!-- Product Collection -->
+<section
+    aria-labelledby="products-collection-heading"
+    class="mx-auto max-w-[1440px] px-6 pb-12 lg:px-10"
+>
+
+    <!-- Collection Heading -->
+    <header
+        class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between"
+    >
+        <section>
+            <p
+                class="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#b88a3b]"
+            >
+                All Products
+            </p>
+
+            <h2
+                id="products-collection-heading"
+                class="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl"
+            >
+                Our Products
+            </h2>
+        </section>
+
+        <p class="text-sm text-slate-500">
+            Showing 1–6 of 48 products
+        </p>
+    </header>
+
+
+    <!-- Product Grid -->
+   <!-- Product Collection -->
+<section
+    aria-labelledby="products-collection-heading"
+    class="mx-auto max-w-[1440px] px-6 pb-12 lg:px-10"
+>
+    <!-- Collection Heading -->
+    <header
+        class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between"
+    >
+        <section>
+            <p
+                class="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#b88a3b]"
+            >
+                All Products
+            </p>
+
+            <h2
+                id="products-collection-heading"
+                class="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl"
+            >
+                Our Products
+            </h2>
+        </section>
+
+        <p class="text-sm text-slate-500">
+            Showing 1–8 of 48 products
+        </p>
+    </header>
+
+
+    <!-- Product Grid -->
+    <section
+        aria-label="Product collection"
+        class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+    >
+
+        <!-- Product 1 -->
+        <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+            <figure class="relative aspect-[4/3] overflow-hidden bg-[#f4f2ee]">
+                <img
+                    src="images/1head.jpg"
+                    alt="Premium wireless headphones"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                >
+
+                <button
+                    type="button"
+                    aria-label="Add Premium Wireless Headphones to wishlist"
+                    class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-sm transition hover:bg-white hover:text-[#b88a3b]"
+                >
+                    ♡
+                </button>
+            </figure>
+
+            <section class="p-5">
+                <p class="text-xs font-medium text-[#b88a3b]">
+                    Electronics
+                </p>
+
+                <h3 class="mt-2 text-base font-semibold text-slate-900">
+                    <a href="#">Premium Wireless Headphones</a>
+                </h3>
+
+                <p class="mt-2 text-lg font-semibold text-slate-900">
+                    $249.00
+                </p>
+
+                <p class="mt-2 text-sm text-[#b88a3b]">
+                    ★★★★★
+                    <span class="ml-1 text-xs text-slate-500">(128)</span>
+                </p>
+
+                <button
+                    type="button"
+                    class="mt-5 flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-[#b88a3b] px-4 text-sm font-medium text-white transition hover:bg-[#9f7531]"
+                >
+                    Add to Cart
+                </button>
+            </section>
+        </article>
+
+
+        <!-- Product 2 -->
+        <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+            <figure class="relative aspect-[4/3] overflow-hidden bg-[#f4f2ee]">
+                <img
+                    src="images/10.jpg"
+                    alt="Minimal black leather backpack"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                >
+
+                <button
+                    type="button"
+                    aria-label="Add Minimal Leather Backpack to wishlist"
+                    class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-sm transition hover:bg-white hover:text-[#b88a3b]"
+                >
+                    ♡
+                </button>
+            </figure>
+
+            <section class="p-5">
+                <p class="text-xs font-medium text-[#b88a3b]">
+                    Accessories
+                </p>
+
+                <h3 class="mt-2 text-base font-semibold text-slate-900">
+                    <a href="#">Minimal Leather Backpack</a>
+                </h3>
+
+                <p class="mt-2 text-lg font-semibold text-slate-900">
+                    $189.00
+                </p>
+
+                <p class="mt-2 text-sm text-[#b88a3b]">
+                    ★★★★★
+                    <span class="ml-1 text-xs text-slate-500">(96)</span>
+                </p>
+
+                <button
+                    type="button"
+                    class="mt-5 flex h-11 w-full items-center justify-center rounded-lg bg-[#b88a3b] px-4 text-sm font-medium text-white transition hover:bg-[#9f7531]"
+                >
+                    Add to Cart
+                </button>
+            </section>
+        </article>
+
+
+        <!-- Product 3 -->
+        <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+            <figure class="relative aspect-[4/3] overflow-hidden bg-[#f4f2ee]">
+                <img
+                    src="images/16.jpg"
+                    alt="Modern black and gold table lamp"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                >
+
+                <button
+                    type="button"
+                    aria-label="Add Modern Table Lamp to wishlist"
+                    class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-sm transition hover:bg-white hover:text-[#b88a3b]"
+                >
+                    ♡
+                </button>
+            </figure>
+
+            <section class="p-5">
+                <p class="text-xs font-medium text-[#b88a3b]">
+                    Home & Living
+                </p>
+
+                <h3 class="mt-2 text-base font-semibold text-slate-900">
+                    <a href="#">Modern Table Lamp</a>
+                </h3>
+
+                <p class="mt-2 text-lg font-semibold text-slate-900">
+                    $129.00
+                </p>
+
+                <p class="mt-2 text-sm text-[#b88a3b]">
+                    ★★★★★
+                    <span class="ml-1 text-xs text-slate-500">(74)</span>
+                </p>
+
+                <button
+                    type="button"
+                    class="mt-5 flex h-11 w-full items-center justify-center rounded-lg bg-[#b88a3b] px-4 text-sm font-medium text-white transition hover:bg-[#9f7531]"
+                >
+                    Add to Cart
+                </button>
+            </section>
+        </article>
+
+
+        <!-- Product 4 -->
+        <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+            <figure class="relative aspect-[4/3] overflow-hidden bg-[#f4f2ee]">
+                <img
+                    src="images/15.jpg"
+                    alt="Premium white everyday sneakers"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                >
+
+                <button
+                    type="button"
+                    aria-label="Add Premium Everyday Sneakers to wishlist"
+                    class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-sm transition hover:bg-white hover:text-[#b88a3b]"
+                >
+                    ♡
+                </button>
+            </figure>
+
+            <section class="p-5">
+                <p class="text-xs font-medium text-[#b88a3b]">
+                    Fashion
+                </p>
+
+                <h3 class="mt-2 text-base font-semibold text-slate-900">
+                    <a href="#">Premium Everyday Sneakers</a>
+                </h3>
+
+                <p class="mt-2 text-lg font-semibold text-slate-900">
+                    $159.00
+                </p>
+
+                <p class="mt-2 text-sm text-[#b88a3b]">
+                    ★★★★★
+                    <span class="ml-1 text-xs text-slate-500">(112)</span>
+                </p>
+
+                <button
+                    type="button"
+                    class="mt-5 flex h-11 w-full items-center justify-center rounded-lg bg-[#b88a3b] px-4 text-sm font-medium text-white transition hover:bg-[#9f7531]"
+                >
+                    Add to Cart
+                </button>
+            </section>
+        </article>
+
+
+        <!-- Product 5 -->
+        <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+            <figure class="relative aspect-[4/3] overflow-hidden bg-[#f4f2ee]">
+                <img
+                    src="images/14.jpg"
+                    alt="Classic black luxury watch"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                >
+
+                <button
+                    type="button"
+                    aria-label="Add Classic Black Watch to wishlist"
+                    class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-sm transition hover:bg-white hover:text-[#b88a3b]"
+                >
+                    ♡
+                </button>
+            </figure>
+
+            <section class="p-5">
+                <p class="text-xs font-medium text-[#b88a3b]">
+                    Accessories
+                </p>
+
+                <h3 class="mt-2 text-base font-semibold text-slate-900">
+                    <a href="#">Classic Black Watch</a>
+                </h3>
+
+                <p class="mt-2 text-lg font-semibold text-slate-900">
+                    $199.00
+                </p>
+
+                <p class="mt-2 text-sm text-[#b88a3b]">
+                    ★★★★★
+                    <span class="ml-1 text-xs text-slate-500">(86)</span>
+                </p>
+
+                <button
+                    type="button"
+                    class="mt-5 flex h-11 w-full items-center justify-center rounded-lg bg-[#b88a3b] px-4 text-sm font-medium text-white transition hover:bg-[#9f7531]"
+                >
+                    Add to Cart
+                </button>
+            </section>
+        </article>
+
+
+        <!-- Product 6 -->
+        <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+            <figure class="relative aspect-[4/3] overflow-hidden bg-[#f4f2ee]">
+                <img
+                    src="images/13.jpg"
+                    alt="Comfortable premium cream hoodie"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                >
+
+                <button
+                    type="button"
+                    aria-label="Add Comfort Hoodie to wishlist"
+                    class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-sm transition hover:bg-white hover:text-[#b88a3b]"
+                >
+                    ♡
+                </button>
+            </figure>
+
+            <section class="p-5">
+                <p class="text-xs font-medium text-[#b88a3b]">
+                    Fashion
+                </p>
+
+                <h3 class="mt-2 text-base font-semibold text-slate-900">
+                    <a href="#">Comfort Hoodie</a>
+                </h3>
+
+                <p class="mt-2 text-lg font-semibold text-slate-900">
+                    $89.00
+                </p>
+
+                <p class="mt-2 text-sm text-[#b88a3b]">
+                    ★★★★★
+                    <span class="ml-1 text-xs text-slate-500">(65)</span>
+                </p>
+
+                <button
+                    type="button"
+                    class="mt-5 flex h-11 w-full items-center justify-center rounded-lg bg-[#b88a3b] px-4 text-sm font-medium text-white transition hover:bg-[#9f7531]"
+                >
+                    Add to Cart
+                </button>
+            </section>
+        </article>
+
+
+        <!-- Product 7 -->
+        <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+            <figure class="relative aspect-[4/3] overflow-hidden bg-[#f4f2ee]">
+                <img
+                    src="images/12.jpg"
+                    alt="Modern ceramic planter with green plant"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                >
+
+                <button
+                    type="button"
+                    aria-label="Add Modern Ceramic Planter to wishlist"
+                    class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-sm transition hover:bg-white hover:text-[#b88a3b]"
+                >
+                    ♡
+                </button>
+            </figure>
+
+            <section class="p-5">
+                <p class="text-xs font-medium text-[#b88a3b]">
+                    Home & Living
+                </p>
+
+                <h3 class="mt-2 text-base font-semibold text-slate-900">
+                    <a href="#">Modern Ceramic Planter</a>
+                </h3>
+
+                <p class="mt-2 text-lg font-semibold text-slate-900">
+                    $79.00
+                </p>
+
+                <p class="mt-2 text-sm text-[#b88a3b]">
+                    ★★★★★
+                    <span class="ml-1 text-xs text-slate-500">(58)</span>
+                </p>
+
+                <button
+                    type="button"
+                    class="mt-5 flex h-11 w-full items-center justify-center rounded-lg bg-[#b88a3b] px-4 text-sm font-medium text-white transition hover:bg-[#9f7531]"
+                >
+                    Add to Cart
+                </button>
+            </section>
+        </article>
+
+
+        <!-- Product 8 -->
+        <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+            <figure class="relative aspect-[4/3] overflow-hidden bg-[#f4f2ee]">
+                <img
+                    src="images/11.jpg"
+                    alt="Noir Homme premium fragrance bottle"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                >
+
+                <button
+                    type="button"
+                    aria-label="Add Noir Homme to wishlist"
+                    class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-sm transition hover:bg-white hover:text-[#b88a3b]"
+                >
+                    ♡
+                </button>
+            </figure>
+
+            <section class="p-5">
+                <p class="text-xs font-medium text-[#b88a3b]">
+                    Fragrance
+                </p>
+
+                <h3 class="mt-2 text-base font-semibold text-slate-900">
+                    <a href="#">Noir Homme</a>
+                </h3>
+
+                <p class="mt-2 text-lg font-semibold text-slate-900">
+                    $119.00
+                </p>
+
+                <p class="mt-2 text-sm text-[#b88a3b]">
+                    ★★★★★
+                    <span class="ml-1 text-xs text-slate-500">(91)</span>
+                </p>
+
+                <button
+                    type="button"
+                    class="mt-5 flex h-11 w-full items-center justify-center rounded-lg bg-[#b88a3b] px-4 text-sm font-medium text-white transition hover:bg-[#9f7531]"
+                >
+                    Add to Cart
+                </button>
+            </section>
+        </article>
+
+    </section>
+</section>
+
+
+            <!-- Pagination -->
+           <!-- Product Pagination -->
+<nav
+    aria-label="Product pagination"
+    class="mt-12 flex items-center justify-center"
+>
+    <ul class="flex items-center gap-2">
+
+        <!-- Previous -->
+        <li>
+            <a
+                href="#"
+                aria-label="Previous page"
+                class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-500 transition hover:border-[#b88a3b] hover:text-[#b88a3b]"
+            >
+                <svg
+                    class="h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    aria-hidden="true"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m15 18-6-6 6-6"
+                    />
+                </svg>
+            </a>
+        </li>
+
+
+        <!-- Page 1 -->
+        <li>
+            <a
+                href="#"
+                aria-current="page"
+                class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#b88a3b] text-sm font-semibold text-white shadow-sm"
+            >
+                1
+            </a>
+        </li>
+
+
+        <!-- Page 2 -->
+        <li>
+            <a
+                href="#"
+                class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-sm font-medium text-slate-700 transition hover:border-[#b88a3b] hover:text-[#b88a3b]"
+            >
+                2
+            </a>
+        </li>
+
+
+        <!-- Page 3 -->
+        <li>
+            <a
+                href="#"
+                class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-sm font-medium text-slate-700 transition hover:border-[#b88a3b] hover:text-[#b88a3b]"
+            >
+                3
+            </a>
+        </li>
+
+
+        <!-- Ellipsis -->
+        <li aria-hidden="true">
+            <span
+                class="flex h-10 w-8 items-center justify-center text-sm text-slate-400"
+            >
+                ...
+            </span>
+        </li>
+
+
+        <!-- Page 8 -->
+        <li>
+            <a
+                href="#"
+                class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-sm font-medium text-slate-700 transition hover:border-[#b88a3b] hover:text-[#b88a3b]"
+            >
+                8
+            </a>
+        </li>
+
+
+        <!-- Next -->
+        <li>
+            <a
+                href="#"
+                aria-label="Next page"
+                class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-700 transition hover:border-[#b88a3b] hover:text-[#b88a3b]"
+            >
+                <svg
+                    class="h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    aria-hidden="true"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m9 6 6 6-6 6"
+                    />
+                </svg>
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+
+        <section
+    aria-label="Store benefits"
+    class="mx-auto max-w-7xl py-7"
+>
+    <section class="grid grid-cols-3">
+
+        <!-- Premium Quality -->
+        <article class="flex items-center justify-center gap-5 border-r border-[#dedbd5] px-8">
+
+            <span
+                class="flex h-12 w-12 shrink-0 items-center justify-center text-[#c9963e]"
+                aria-hidden="true"
+            >
+                <svg
+                    class="h-11 w-11"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                >
+                    <circle cx="12" cy="9" r="6"></circle>
+                    <path d="m9.5 9 1.7 1.7L14.8 7"></path>
+                    <path d="m8 14-1 7 5-2 5 2-1-7"></path>
+                </svg>
+            </span>
+
+            <section>
+                <h2 class="text-sm font-semibold text-[#111315]">
+                    Premium Quality
+                </h2>
+
+                <p class="mt-1 max-w-[180px] text-xs leading-5 text-[#66686b]">
+                    Carefully selected products built to last.
+                </p>
+            </section>
+
+        </article>
+
+
+        <!-- Fast Delivery -->
+        <article class="flex items-center justify-center gap-5 border-r border-[#dedbd5] px-8">
+
+            <span
+                class="flex h-12 w-12 shrink-0 items-center justify-center text-[#c9963e]"
+                aria-hidden="true"
+            >
+                <svg
+                    class="h-11 w-11"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                >
+                    <path d="M3 6h11v11H3z"></path>
+                    <path d="M14 10h4l3 3v4h-7z"></path>
+                    <circle cx="7" cy="19" r="2"></circle>
+                    <circle cx="18" cy="19" r="2"></circle>
+                </svg>
+            </span>
+
+            <section>
+                <h2 class="text-sm font-semibold text-[#111315]">
+                    Fast Delivery
+                </h2>
+
+                <p class="mt-1 max-w-[180px] text-xs leading-5 text-[#66686b]">
+                    Reliable delivery from our store to your door.
+                </p>
+            </section>
+
+        </article>
+
+
+        <!-- Secure Shopping -->
+        <article class="flex items-center justify-center gap-5 px-8">
+
+            <span
+                class="flex h-12 w-12 shrink-0 items-center justify-center text-[#c9963e]"
+                aria-hidden="true"
+            >
+                <svg
+                    class="h-11 w-11"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                >
+                    <path d="M12 3 20 6v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6l8-3Z"></path>
+                    <rect x="9" y="10" width="6" height="5" rx="1"></rect>
+                    <path d="M10.5 10V8.5a1.5 1.5 0 0 1 3 0V10"></path>
+                </svg>
+            </span>
+
+            <section>
+                <h2 class="text-sm font-semibold text-[#111315]">
+                    Secure Shopping
+                </h2>
+
+                <p class="mt-1 max-w-[180px] text-xs leading-5 text-[#66686b]">
+                    Your shopping experience is protected.
+                </p>
+            </section>
+
+        </article>
+
+    </section>
+</section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 text-zinc-300">
+
+    <section class="mx-auto max-w-7xl px-6 py-16">
+
+        <section class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+
+            <!-- BRAND -->
+
+            <section class="lg:col-span-2">
+
+                <a
+                    href="index.html"
+                    class="text-2xl font-semibold tracking-tight text-white"
+                >
+                      PREMIUM
+                </a>
+
+                <p class="mt-5 max-w-sm text-sm leading-6 text-zinc-400">
+                    Premium products carefully selected for modern living,
+                    thoughtful design, and everyday quality.
+                </p>
+
+            </section>
+
+
+            <!-- SHOP -->
+
+            <nav aria-labelledby="footer-shop-heading">
+
+                <h2
+                    id="footer-shop-heading"
+                    class="text-sm font-semibold uppercase tracking-wider text-white"
+                >
+                    Shop
+                </h2>
+
+                <ul class="mt-5 space-y-3 text-sm">
+
+                    <li>
+                        <a
+                            href="products.html"
+                            class="transition hover:text-amber-500"
+                        >
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="categories.html"
+                            class="transition hover:text-amber-500"
+                        >
+                            Categories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="products.html"
+                            class="transition hover:text-amber-500"
+                        >
+                            New Arrivals
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- COMPANY -->
+
+            <nav aria-labelledby="footer-company-heading">
+
+                <h2
+                    id="footer-company-heading"
+                    class="text-sm font-semibold uppercase tracking-wider text-white"
+                >
+                    Company
+                </h2>
+
+                <ul class="mt-5 space-y-3 text-sm">
+
+                    <li>
+                        <a
+                            href="#"
+                            class="transition hover:text-amber-500"
+                        >
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#"
+                            class="transition hover:text-amber-500"
+                        >
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#"
+                            class="transition hover:text-amber-500"
+                        >
+                            Our Story
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </section>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <section
+            class="mt-16 flex flex-col gap-4 border-t border-zinc-800 pt-8 sm:flex-row sm:items-center sm:justify-between"
+        >
+
+            <p class="text-sm text-zinc-500">
+                © 2026 Premium Store. All rights reserved.
+            </p>
+
+            <nav aria-label="Legal">
+
+                <ul class="flex gap-6 text-sm text-zinc-500">
+
+                    <li>
+                        <a
+                            href="#"
+                            class="transition hover:text-zinc-200"
+                        >
+                            Privacy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#"
+                            class="transition hover:text-zinc-200"
+                        >
+                            Terms
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </section>
+
+    </section>
+
+</footer>
+
+</body>
+</html>

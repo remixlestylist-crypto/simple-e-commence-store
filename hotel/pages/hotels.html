@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Hotels | Maison Élan</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+>
+</head>
+<body>
+
+   <!-- Header -->
+<header class="border-b border-stone-200 bg-[#faf9f6]">
+    <nav
+        aria-label="Primary navigation"
+        class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8"
+    >
+        <!-- Brand -->
+        <a
+            href="../index.html"
+            class="flex shrink-0 flex-col"
+        >
+            <span class="font-serif text-xl font-semibold tracking-[0.2em] text-stone-900">
+                Maison Élan
+            </span>
+
+            <span class="mt-1 text-[0.55rem] font-medium uppercase tracking-[0.35em] text-stone-500">
+                Hotels &amp; Resorts
+            </span>
+        </a>
+
+        <!-- Primary Navigation -->
+        <ul class="hidden items-center gap-8 lg:flex">
+            <li>
+                <a
+                    href="../index2.html"
+                    class="text-xs font-medium uppercase tracking-wider text-stone-600 transition hover:text-[#a67c37]"
+                >
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../pages/hotels.html"
+                aria-current="page"
+                    class="border-b border-[#a67c37] pb-2 text-xs font-semibold uppercase tracking-wider text-[#a67c37]"
+                >
+                    Hotels
+                </a>
+            </li>
+
+
+                        <li>
+                            <a
+                                href="../pages/hotel-details.html"
+                           class="text-xs font-medium uppercase tracking-wider text-stone-600 transition hover:text-[#a67c37]"
+                >
+                                Experiences
+                            </a>
+                        </li>
+
+
+            <li>
+                <a
+                    href="../pages/booking.html"
+                    class="text-xs font-medium uppercase tracking-wider text-stone-600 transition hover:text-[#a67c37]"
+                >
+                    Offers
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../pages/contact.html"
+                    class="text-xs font-medium uppercase tracking-wider text-stone-600 transition hover:text-[#a67c37]"
+                >
+                    Contact
+                </a>
+            </li>
+        </ul>
+
+        <!-- Header Actions -->
+        <ul class="flex items-center gap-5">
+           <li>
+    <a
+        href="#sign-in"
+        aria-label="Sign in"
+        class="hidden items-center justify-center text-xl text-stone-700 transition hover:text-[#a67c37] sm:inline-flex"
+    >
+        <i
+            class="bx bx-user"
+            aria-hidden="true"
+        ></i>
+    </a>
+</li>
+            <li>
+                <a
+                    href="pages/booking.html"
+                    class="inline-flex items-center justify-center bg-[#a67c37] px-5 py-3 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-[#8d682e]"
+                >
+                    Book Your Stay
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <main>
+<!-- ==========================================================
+     BREADCRUMB + PAGE INTRODUCTION
+========================================================== -->
+<section
+    class="relative min-h-[620px] overflow-hidden bg-[#e9e5dc] px-6 pb-20 pt-8 sm:min-h-[680px] lg:px-8 lg:pb-24"
+>
+    <!-- Background Image -->
+   <!-- Background Image -->
+<img
+    src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=2400&q=100"
+    alt="View of Paris with the Eiffel Tower at sunset"
+    class="absolute inset-0 h-full w-full object-cover object-[70%_center]"
+>
+
+<!-- Light Overlay -->
+<section
+    aria-hidden="true"
+    class="absolute inset-0 bg-gradient-to-r from-[#f4f1eb] via-[#f4f1eb]/65 via-45% to-transparent"
+></section>
+    <!-- Additional Bottom Overlay -->
+    <section
+        aria-hidden="true"
+        class="absolute inset-0 bg-gradient-to-t from-[#f4f1eb]/30 to-transparent"
+    ></section>
+
+    <!-- Breadcrumb -->
+    <nav
+        aria-label="Breadcrumb"
+        class="relative z-10 mx-auto max-w-7xl"
+    >
+        <ul class="flex items-center gap-2 text-xs text-stone-600">
+            <li>
+                <a
+                    href="index.html"
+                    class="transition hover:text-[#a67c37]"
+                >
+                    Home
+                </a>
+            </li>
+
+            <li
+                aria-hidden="true"
+                class="flex items-center text-base text-stone-400"
+            >
+                <i class="bx bx-chevron-right"></i>
+            </li>
+
+            <li>
+                <a
+                    href="hotels.html"
+                    aria-current="page"
+                    class="font-medium text-[#a67c37]"
+                >
+                    Hotels
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Introduction -->
+    <header
+        class="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center sm:min-h-[560px]"
+    >
+        <section class="max-w-xl">
+            
+            <!-- Eyebrow -->
+            <p class="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#a67c37] sm:text-xs">
+                Find your perfect stay
+            </p>
+
+            <!-- Main Heading -->
+            <h1 class="mt-5 font-serif text-5xl font-medium leading-[1.05] text-stone-900 sm:text-6xl lg:text-7xl">
+                Discover exceptional
+                <span class="block">
+                    hotels
+                </span>
+            </h1>
+
+            <!-- Description -->
+            <p class="mt-7 max-w-lg text-sm leading-7 text-stone-700 sm:text-base sm:leading-8">
+                Explore handpicked hotels, resorts, and private retreats
+                designed for unforgettable stays.
+            </p>
+
+            <!-- Property Count -->
+            <p
+                class="mt-8 inline-flex items-center gap-3 text-sm font-medium text-stone-700"
+            >
+                <span
+                    class="flex h-11 w-11 items-center justify-center rounded-full border border-[#a67c37]/60 bg-[#f4f1eb]/80 text-xl text-[#a67c37]"
+                >
+                    <i
+                        class="bx bx-hotel"
+                        aria-hidden="true"
+                    ></i>
+                </span>
+
+                <span>
+                    Over
+                    <strong class="font-semibold text-stone-900">
+                        240 properties
+                    </strong>
+                    available
+                </span>
+            </p>
+
+        </section>
+    </header>
+</section><!-- ==========================================================
+     HOTEL SEARCH FORM
+========================================================== -->
+
+<form
+    aria-label="Hotel search"
+    class="relative z-10 mx-auto -mt-10 w-[calc(100%-3rem)] max-w-6xl bg-white p-5 shadow-[0_12px_35px_rgba(0,0,0,0.12)] sm:p-6 lg:-mt-12"
+>
+    <fieldset class="grid gap-4 md:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr_0.8fr_1fr] lg:items-end lg:gap-3">
+
+        <legend class="sr-only">
+            Search hotels
+        </legend>
+
+        <!-- Destination -->
+        <p class="flex flex-col gap-2">
+            <label
+                for="destination"
+                class="text-[9px] font-bold uppercase tracking-[0.16em] text-stone-500"
+            >
+                Destination
+            </label>
+
+            <span class="relative flex items-center">
+                <i
+                    class="bx bx-map shrink-0 absolute left-3 text-base text-stone-500"
+                    aria-hidden="true"
+                ></i>
+
+                <input
+                    type="text"
+                    id="destination"
+                    name="destination"
+                    placeholder="Where are you going?"
+                    value="Paris, France"
+                    class="h-12 w-full border border-stone-200 bg-white pl-9 pr-4 text-xs text-stone-700 outline-none transition placeholder:text-stone-400 focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                >
+            </span>
+        </p>
+
+        <!-- Check-in -->
+        <p class="flex flex-col gap-2">
+            <label
+                for="check-in"
+                class="text-[9px] font-bold uppercase tracking-[0.16em] text-stone-500"
+            >
+                Check-in
+            </label>
+
+            <span class="relative flex items-center">
+                <i
+                    class="bx bx-calendar shrink-0 absolute left-3 text-base text-stone-500 pointer-events-none"
+                    aria-hidden="true"
+                ></i>
+
+                <input
+                    type="date"
+                    id="check-in"
+                    name="check-in"
+                    class="h-12 w-full border border-stone-200 bg-white pl-9 pr-3 text-xs text-stone-600 outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                >
+            </span>
+        </p>
+
+        <!-- Check-out -->
+        <p class="flex flex-col gap-2">
+            <label
+                for="check-out"
+                class="text-[9px] font-bold uppercase tracking-[0.16em] text-stone-500"
+            >
+                Check-out
+            </label>
+
+            <span class="relative flex items-center">
+                <i
+                    class="bx bx-calendar shrink-0 absolute left-3 text-base text-stone-500 pointer-events-none"
+                    aria-hidden="true"
+                ></i>
+
+                <input
+                    type="date"
+                    id="check-out"
+                    name="check-out"
+                    class="h-12 w-full border border-stone-200 bg-white pl-9 pr-3 text-xs text-stone-600 outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                >
+            </span>
+        </p>
+
+        <!-- Guests -->
+        <p class="flex flex-col gap-2">
+            <label
+                for="guests"
+                class="text-[9px] font-bold uppercase tracking-[0.16em] text-stone-500"
+            >
+                Guests
+            </label>
+
+            <span class="relative flex items-center">
+                <i
+                    class="bx bx-user shrink-0 absolute left-3 z-10 text-base text-stone-500 pointer-events-none"
+                    aria-hidden="true"
+                ></i>
+
+                <select
+                    id="guests"
+                    name="guests"
+                    class="h-12 w-full appearance-none border border-stone-200 bg-white pl-9 pr-8 text-xs text-stone-700 outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                >
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5+ Guests</option>
+                </select>
+
+                <i
+                    class="bx bx-chevron-down pointer-events-none absolute right-3 text-base text-stone-500"
+                    aria-hidden="true"
+                ></i>
+            </span>
+        </p>
+
+        <!-- Search Button -->
+        <p class="flex flex-col gap-2">
+            <span
+                aria-hidden="true"
+                class="hidden text-[9px] font-bold uppercase tracking-[0.16em] lg:block"
+            >
+                Search
+            </span>
+
+            <button
+                type="submit"
+                class="h-12 w-full bg-[#a67c37] px-5 text-[10px] font-bold uppercase tracking-[0.16em] text-white transition duration-300 hover:bg-[#8d682e] focus:outline-none focus:ring-2 focus:ring-[#a67c37] focus:ring-offset-2"
+            >
+                Search Hotels
+            </button>
+        </p>
+
+    </fieldset>
+</form>
+
+        <!-- ======================================================
+     HOTEL RESULTS AREA
+======================================================= -->
+<section
+    class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[280px_minmax(0,1fr)] lg:px-8"
+>
+
+    <!-- ======================================================
+         FILTER AREA
+    ======================================================= -->
+    <aside
+        aria-labelledby="filters-heading"
+        class="h-fit rounded-sm border border-stone-200 bg-white p-5 shadow-sm lg:sticky lg:top-6"
+    >
+
+        <h2
+            id="filters-heading"
+            class="border-b border-stone-200 pb-5 text-xs font-bold uppercase tracking-[0.18em] text-stone-700"
+        >
+            Filter your stay
+        </h2>
+
+        <form
+            aria-label="Hotel filters"
+            class="divide-y divide-stone-200"
+        >
+
+            <!-- Price Filter -->
+            <fieldset class="py-6">
+
+                <legend class="flex w-full items-center justify-between text-sm font-semibold text-stone-800">
+                    Price per night
+                    <i class="bx bx-chevron-up text-lg"></i>
+                </legend>
+
+                <p class="mt-5 flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <input
+                            type="checkbox"
+                            id="price-under-150"
+                            name="price"
+                            class="h-4 w-4 rounded border-stone-300 accent-[#9c742f]"
+                        >
+                        <label
+                            for="price-under-150"
+                            class="cursor-pointer text-sm text-stone-600"
+                        >
+                            Under $150
+                        </label>
+                    </span>
+                    <span class="text-xs text-stone-400">32</span>
+                </p>
+
+                <p class="mt-4 flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <input
+                            type="checkbox"
+                            id="price-150-300"
+                            name="price"
+                            class="h-4 w-4 rounded border-stone-300 accent-[#9c742f]"
+                        >
+                        <label
+                            for="price-150-300"
+                            class="cursor-pointer text-sm text-stone-600"
+                        >
+                            $150 – $300
+                        </label>
+                    </span>
+                    <span class="text-xs text-stone-400">87</span>
+                </p>
+
+                <p class="mt-4 flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <input
+                            type="checkbox"
+                            id="price-300-500"
+                            name="price"
+                            class="h-4 w-4 rounded border-stone-300 accent-[#9c742f]"
+                        >
+                        <label
+                            for="price-300-500"
+                            class="cursor-pointer text-sm text-stone-600"
+                        >
+                            $300 – $500
+                        </label>
+                    </span>
+                    <span class="text-xs text-stone-400">68</span>
+                </p>
+
+                <p class="mt-4 flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <input
+                            type="checkbox"
+                            id="price-500-750"
+                            name="price"
+                            class="h-4 w-4 rounded border-stone-300 accent-[#9c742f]"
+                        >
+                        <label
+                            for="price-500-750"
+                            class="cursor-pointer text-sm text-stone-600"
+                        >
+                            $500 – $750
+                        </label>
+                    </span>
+                    <span class="text-xs text-stone-400">34</span>
+                </p>
+
+                <p class="mt-4 flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <input
+                            type="checkbox"
+                            id="price-750-plus"
+                            name="price"
+                            class="h-4 w-4 rounded border-stone-300 accent-[#9c742f]"
+                        >
+                        <label
+                            for="price-750-plus"
+                            class="cursor-pointer text-sm text-stone-600"
+                        >
+                            $750+
+                        </label>
+                    </span>
+                    <span class="text-xs text-stone-400">19</span>
+                </p>
+
+            </fieldset>
+
+
+            <!-- Property Type Filter -->
+            <fieldset class="py-6">
+
+                <legend class="flex w-full items-center justify-between text-sm font-semibold text-stone-800">
+                    Property type
+                    <i class="bx bx-chevron-up text-lg"></i>
+                </legend>
+
+                <p class="mt-5 flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <input type="checkbox" id="type-hotel" name="property-type"
+                            class="h-4 w-4 accent-[#9c742f]">
+                        <label for="type-hotel" class="text-sm text-stone-600">Hotel</label>
+                    </span>
+                    <span class="text-xs text-stone-400">112</span>
+                </p>
+
+                <p class="mt-4 flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <input type="checkbox" id="type-resort" name="property-type"
+                            class="h-4 w-4 accent-[#9c742f]">
+                        <label for="type-resort" class="text-sm text-stone-600">Resort</label>
+                    </span>
+                    <span class="text-xs text-stone-400">64</span>
+                </p>
+
+                <p class="mt-4 flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <input type="checkbox" id="type-boutique" name="property-type"
+                            class="h-4 w-4 accent-[#9c742f]">
+                        <label for="type-boutique" class="text-sm text-stone-600">Boutique Hotel</label>
+                    </span>
+                    <span class="text-xs text-stone-400">42</span>
+                </p>
+
+                <p class="mt-4 flex items-center justify-between">
+                    <span class="flex items-center gap-3">
+                        <input type="checkbox" id="type-villa" name="property-type"
+                            class="h-4 w-4 accent-[#9c742f]">
+                        <label for="type-villa" class="text-sm text-stone-600">Villa</label>
+                    </span>
+                    <span class="text-xs text-stone-400">22</span>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="type-apartment" name="property-type"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="type-apartment" class="text-sm text-stone-600">Apartment</label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="type-private-residence" name="property-type"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="type-private-residence" class="text-sm text-stone-600">
+                        Private Residence
+                    </label>
+                </p>
+
+            </fieldset>
+
+
+            <!-- Star Rating -->
+            <fieldset class="py-6">
+
+                <legend class="flex w-full items-center justify-between text-sm font-semibold text-stone-800">
+                    Star rating
+                    <i class="bx bx-chevron-up text-lg"></i>
+                </legend>
+
+                <p class="mt-5 flex items-center gap-3">
+                    <input type="checkbox" id="stars-5" name="star-rating"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="stars-5" class="text-sm text-stone-600">
+                        <span class="tracking-wider text-[#a77b32]">★★★★★</span>
+                        5 Stars
+                    </label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="stars-4" name="star-rating"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="stars-4" class="text-sm text-stone-600">
+                        <span class="tracking-wider text-[#a77b32]">★★★★</span>
+                        4 Stars
+                    </label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="stars-3" name="star-rating"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="stars-3" class="text-sm text-stone-600">
+                        <span class="tracking-wider text-[#a77b32]">★★★</span>
+                        3 Stars
+                    </label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="stars-2" name="star-rating"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="stars-2" class="text-sm text-stone-600">
+                        <span class="tracking-wider text-[#a77b32]">★★</span>
+                        2 Stars
+                    </label>
+                </p>
+
+            </fieldset>
+
+
+            <!-- Guest Rating -->
+            <fieldset class="py-6">
+
+                <legend class="flex w-full items-center justify-between text-sm font-semibold text-stone-800">
+                    Guest rating
+                    <i class="bx bx-chevron-up text-lg"></i>
+                </legend>
+
+                <p class="mt-5 flex items-center gap-3">
+                    <input type="checkbox" id="guest-rating-exceptional" name="guest-rating"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="guest-rating-exceptional" class="text-sm text-stone-600">
+                        Exceptional — 9+
+                    </label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="guest-rating-excellent" name="guest-rating"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="guest-rating-excellent" class="text-sm text-stone-600">
+                        Excellent — 8+
+                    </label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="guest-rating-very-good" name="guest-rating"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="guest-rating-very-good" class="text-sm text-stone-600">
+                        Very Good — 7+
+                    </label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="guest-rating-good" name="guest-rating"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="guest-rating-good" class="text-sm text-stone-600">
+                        Good — 6+
+                    </label>
+                </p>
+
+            </fieldset>
+
+
+            <!-- Amenities -->
+            <fieldset class="py-6">
+
+                <legend class="flex w-full items-center justify-between text-sm font-semibold text-stone-800">
+                    Amenities
+                    <i class="bx bx-chevron-up text-lg"></i>
+                </legend>
+
+                <p class="mt-5 flex items-center gap-3">
+                    <input type="checkbox" id="amenity-wifi" name="amenities"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="amenity-wifi" class="text-sm text-stone-600">Free Wi-Fi</label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="amenity-pool" name="amenities"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="amenity-pool" class="text-sm text-stone-600">Swimming Pool</label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="amenity-spa" name="amenities"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="amenity-spa" class="text-sm text-stone-600">Spa</label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="amenity-fitness" name="amenities"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="amenity-fitness" class="text-sm text-stone-600">Fitness Center</label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="amenity-restaurant" name="amenities"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="amenity-restaurant" class="text-sm text-stone-600">Restaurant</label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="amenity-airport-transfer" name="amenities"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="amenity-airport-transfer" class="text-sm text-stone-600">
+                        Airport Transfer
+                    </label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="amenity-room-service" name="amenities"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="amenity-room-service" class="text-sm text-stone-600">Room Service</label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="amenity-parking" name="amenities"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="amenity-parking" class="text-sm text-stone-600">Parking</label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="amenity-beach-access" name="amenities"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="amenity-beach-access" class="text-sm text-stone-600">
+                        Beach Access
+                    </label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="amenity-air-conditioning" name="amenities"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="amenity-air-conditioning" class="text-sm text-stone-600">
+                        Air Conditioning
+                    </label>
+                </p>
+
+            </fieldset>
+
+
+            <!-- Popular Areas -->
+            <fieldset class="py-6">
+
+                <legend class="flex w-full items-center justify-between text-sm font-semibold text-stone-800">
+                    Popular areas
+                    <i class="bx bx-chevron-up text-lg"></i>
+                </legend>
+
+                <p class="mt-5 flex items-center gap-3">
+                    <input type="checkbox" id="area-city-center" name="location"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="area-city-center" class="text-sm text-stone-600">City Center</label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="area-beachfront" name="location"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="area-beachfront" class="text-sm text-stone-600">Beachfront</label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="area-airport" name="location"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="area-airport" class="text-sm text-stone-600">Airport Area</label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="area-old-town" name="location"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="area-old-town" class="text-sm text-stone-600">Old Town</label>
+                </p>
+
+                <p class="mt-4 flex items-center gap-3">
+                    <input type="checkbox" id="area-business-district" name="location"
+                        class="h-4 w-4 accent-[#9c742f]">
+                    <label for="area-business-district" class="text-sm text-stone-600">
+                        Business District
+                    </label>
+                </p>
+
+            </fieldset>
+
+
+            <button
+                type="submit"
+                class="mt-6 w-full bg-[#9c742f] px-5 py-3.5 text-xs font-bold uppercase tracking-[0.12em] text-white transition hover:bg-[#805d25]"
+            >
+                Apply Filters
+            </button>
+
+            <button
+                type="button"
+                class="mt-3 flex w-full items-center justify-center gap-2 border border-[#b89455] px-5 py-3 text-xs font-bold uppercase tracking-[0.1em] text-[#8a662b] transition hover:bg-stone-50"
+            >
+                Clear all filters
+                <i class="bx bx-reset text-base"></i>
+            </button>
+
+        </form>
+
+    </aside>
+
+
+    <!-- ======================================================
+         RESULTS CONTENT
+    ======================================================= -->
+    <section class="min-w-0">
+
+        <!-- Results Header -->
+        <header class="mb-6 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+
+            <section>
+                <h2 class="font-serif text-3xl text-stone-800">
+                    240 hotels found
+                </h2>
+
+                <p class="mt-2 text-sm text-stone-500">
+                    Paris
+                    <span class="px-2">•</span>
+                    Jun 10 – Jun 15
+                    <span class="px-2">•</span>
+                    2 Guests
+                </p>
+            </section>
+
+            <p class="flex items-center gap-3 text-sm text-stone-500">
+                <label for="sort-hotels">Sort by</label>
+
+                <select
+                    id="sort-hotels"
+                    class="min-w-36 border border-stone-200 bg-white px-4 py-3 text-sm text-stone-700 outline-none"
+                >
+                    <option>Recommended</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Guest Rating</option>
+                </select>
+            </p>
+
+        </header>
+
+
+        <!-- ======================================================
+             HOTEL RESULTS LIST
+        ======================================================= -->
+        <ul class="space-y-5">
+
+            <!-- HOTEL 1 -->
+            <li>
+
+                <article
+                    aria-labelledby="hotel-1-name"
+                    class="grid overflow-hidden rounded-sm border border-stone-200 bg-white shadow-sm transition duration-300 hover:shadow-md md:grid-cols-[280px_minmax(0,1fr)]"
+                >
+
+                    <figure class="relative min-h-64 overflow-hidden">
+
+                        <img
+                            src="1images/maisonlumiere.jpeg"
+                            alt="Luxury Paris hotel overlooking the Eiffel Tower"
+                            class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                        >
+
+                        <figcaption class="sr-only">
+                            Maison Lumière, Paris
+                        </figcaption>
+
+                        <p class="absolute left-4 top-4 bg-stone-900 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-white">
+                            Best seller
+                        </p>
+
+                    </figure>
+
+
+                    <section class="relative flex flex-col p-6 sm:p-7">
+
+                        <button
+                            type="button"
+                            aria-label="Add Maison Lumière to favorites"
+                            class="absolute right-5 top-5 text-2xl text-stone-400 transition hover:text-[#9c742f]"
+                        >
+                            <i class="bx bx-heart"></i>
+                        </button>
+
+                        <p class="text-xs font-bold uppercase tracking-[0.14em] text-[#9c742f]">
+                            Luxury Hotel
+                        </p>
+
+                        <h3
+                            id="hotel-1-name"
+                            class="mt-2 pr-10 font-serif text-2xl text-stone-800 sm:text-3xl"
+                        >
+                            Maison Lumière
+                        </h3>
+
+                        <p class="mt-2 flex items-center gap-2 text-sm text-stone-500">
+                            <i class="bx bx-map text-base"></i>
+                            Paris, France
+                        </p>
+
+                        <p class="mt-3 flex items-center gap-2 text-sm">
+                            <span class="tracking-wider text-[#a77b32]">★★★★★</span>
+                            <strong class="text-stone-700">4.9</strong>
+                            <span class="text-stone-400">(214 reviews)</span>
+                        </p>
+
+                        <ul class="mt-5 flex flex-wrap gap-x-5 gap-y-3 text-stone-500">
+
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-wifi"></i>
+                                Free Wi-Fi
+                            </li>
+
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-restaurant"></i>
+                                Restaurant
+                            </li>
+
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-spa"></i>
+                                Spa
+                            </li>
+
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-dumbbell"></i>
+                                Fitness Center
+                            </li>
+
+                        </ul>
+
+                        <p class="mt-5 max-w-2xl text-sm leading-6 text-stone-500">
+                            An elegant Parisian retreat combining timeless architecture
+                            with contemporary luxury.
+                        </p>
+
+                        <footer class="mt-6 flex flex-col gap-5 border-t border-stone-100 pt-5 sm:flex-row sm:items-end sm:justify-between">
+
+                            <section>
+                                <p class="text-xs text-stone-400">From</p>
+
+                                <p class="mt-1 font-serif text-3xl text-stone-800">
+                                    $510
+                                    <span class="font-sans text-xs text-stone-500">
+                                        per night
+                                    </span>
+                                </p>
+
+                                <p class="mt-2 text-xs text-stone-400">
+                                    Breakfast included · Includes taxes and fees
+                                </p>
+                            </section>
+
+                            <a
+                                href="hotel-details.html"
+                                class="inline-flex items-center justify-center border border-[#b89455] px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#8a662b] transition hover:bg-[#9c742f] hover:text-white"
+                            >
+                                View Hotel
+                            </a>
+
+                        </footer>
+
+                    </section>
+
+                </article>
+
+            </li>
+
+
+            <!-- HOTEL 2 -->
+            <li>
+
+                <article
+                    aria-labelledby="hotel-2-name"
+                    class="grid overflow-hidden rounded-sm border border-stone-200 bg-white shadow-sm transition duration-300 hover:shadow-md md:grid-cols-[280px_minmax(0,1fr)]"
+                >
+
+                    <figure class="relative min-h-64 overflow-hidden">
+
+                        <img
+                            src="1images/azure.jpeg"
+                            alt="Overwater villas at Azure Pearl Resort in the Maldives"
+                            class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                        >
+
+                        <figcaption class="sr-only">
+                            Azure Pearl Resort, Maldives
+                        </figcaption>
+
+                        <p class="absolute left-4 top-4 bg-[#496f55] px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-white">
+                            Exclusive
+                        </p>
+
+                    </figure>
+
+                    <section class="relative flex flex-col p-6 sm:p-7">
+
+                        <button
+                            type="button"
+                            aria-label="Add Azure Pearl Resort to favorites"
+                            class="absolute right-5 top-5 text-2xl text-stone-400 transition hover:text-[#9c742f]"
+                        >
+                            <i class="bx bx-heart"></i>
+                        </button>
+
+                        <p class="text-xs font-bold uppercase tracking-[0.14em] text-[#9c742f]">
+                            Luxury Resort
+                        </p>
+
+                        <h3
+                            id="hotel-2-name"
+                            class="mt-2 pr-10 font-serif text-2xl text-stone-800 sm:text-3xl"
+                        >
+                            Azure Pearl Resort
+                        </h3>
+
+                        <p class="mt-2 flex items-center gap-2 text-sm text-stone-500">
+                            <i class="bx bx-map"></i>
+                            Maldives
+                        </p>
+
+                        <p class="mt-3 flex items-center gap-2 text-sm">
+                            <span class="tracking-wider text-[#a77b32]">★★★★★</span>
+                            <strong class="text-stone-700">4.9</strong>
+                            <span class="text-stone-400">(128 reviews)</span>
+                        </p>
+
+                        <ul class="mt-5 flex flex-wrap gap-x-5 gap-y-3 text-stone-500">
+
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-water"></i>
+                                Private Beach
+                            </li>
+
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-swim"></i>
+                                Pool
+                            </li>
+
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-spa"></i>
+                                Spa
+                            </li>
+
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-restaurant"></i>
+                                Restaurant
+                            </li>
+
+                        </ul>
+
+                        <p class="mt-5 text-sm leading-6 text-stone-500">
+                            A secluded island retreat surrounded by crystal-clear waters
+                            and endless ocean views.
+                        </p>
+
+                        <footer class="mt-6 flex flex-col gap-5 border-t border-stone-100 pt-5 sm:flex-row sm:items-end sm:justify-between">
+
+                            <section>
+                                <p class="text-xs text-stone-400">From</p>
+
+                                <p class="mt-1 font-serif text-3xl text-stone-800">
+                                    $420
+                                    <span class="font-sans text-xs text-stone-500">
+                                        per night
+                                    </span>
+                                </p>
+
+                                <p class="mt-2 text-xs text-stone-400">
+                                    Breakfast included · Includes taxes and fees
+                                </p>
+                            </section>
+
+                            <a
+                                href="hotel-details.html"
+                                class="inline-flex items-center justify-center border border-[#b89455] px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#8a662b] transition hover:bg-[#9c742f] hover:text-white"
+                            >
+                                View Hotel
+                            </a>
+
+                        </footer>
+
+                    </section>
+
+                </article>
+
+            </li>
+
+
+            <!-- HOTEL 3 -->
+            <li>
+
+                <article
+                    aria-labelledby="hotel-3-name"
+                    class="grid overflow-hidden rounded-sm border border-stone-200 bg-white shadow-sm transition duration-300 hover:shadow-md md:grid-cols-[280px_minmax(0,1fr)]"
+                >
+
+                    <figure class="relative min-h-64 overflow-hidden">
+
+                        <img
+                            src="1images/GA.jpg"
+                            alt="Panoramic skyline view from The Grand Aurelia in Dubai"
+                            class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                        >
+
+                        <figcaption class="sr-only">
+                            The Grand Aurelia, Dubai
+                        </figcaption>
+
+                    </figure>
+
+                    <section class="relative flex flex-col p-6 sm:p-7">
+
+                        <button
+                            type="button"
+                            aria-label="Add The Grand Aurelia to favorites"
+                            class="absolute right-5 top-5 text-2xl text-stone-400 transition hover:text-[#9c742f]"
+                        >
+                            <i class="bx bx-heart"></i>
+                        </button>
+
+                        <p class="text-xs font-bold uppercase tracking-[0.14em] text-[#9c742f]">
+                            Luxury Hotel
+                        </p>
+
+                        <h3
+                            id="hotel-3-name"
+                            class="mt-2 pr-10 font-serif text-2xl text-stone-800 sm:text-3xl"
+                        >
+                            The Grand Aurelia
+                        </h3>
+
+                        <p class="mt-2 flex items-center gap-2 text-sm text-stone-500">
+                            <i class="bx bx-map"></i>
+                            Dubai, UAE
+                        </p>
+
+                        <p class="mt-3 flex items-center gap-2 text-sm">
+                            <span class="tracking-wider text-[#a77b32]">★★★★★</span>
+                            <strong class="text-stone-700">4.8</strong>
+                            <span class="text-stone-400">(96 reviews)</span>
+                        </p>
+
+                        <ul class="mt-5 flex flex-wrap gap-x-5 gap-y-3 text-stone-500">
+
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-swim"></i>
+                                Rooftop Pool
+                            </li>
+
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-spa"></i>
+                                Spa
+                            </li>
+
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-restaurant"></i>
+                                Restaurant
+                            </li>
+
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-dumbbell"></i>
+                                Fitness Center
+                            </li>
+
+                        </ul>
+
+                        <p class="mt-5 text-sm leading-6 text-stone-500">
+                            A sophisticated urban escape offering panoramic city views
+                            and exceptional hospitality.
+                        </p>
+
+                        <footer class="mt-6 flex flex-col gap-5 border-t border-stone-100 pt-5 sm:flex-row sm:items-end sm:justify-between">
+
+                            <section>
+                                <p class="text-xs text-stone-400">From</p>
+
+                                <p class="mt-1 font-serif text-3xl text-stone-800">
+                                    $380
+                                    <span class="font-sans text-xs text-stone-500">
+                                        per night
+                                    </span>
+                                </p>
+
+                                <p class="mt-2 text-xs text-stone-400">
+                                    Free cancellation · Includes taxes and fees
+                                </p>
+                            </section>
+
+                            <a
+                                href="hotel-details.html"
+                                class="inline-flex items-center justify-center border border-[#b89455] px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#8a662b] transition hover:bg-[#9c742f] hover:text-white"
+                            >
+                                View Hotel
+                            </a>
+
+                        </footer>
+
+                    </section>
+
+                </article>
+
+            </li>
+
+
+            <!-- HOTEL 4 -->
+            <li>
+
+                <article
+                    aria-labelledby="hotel-4-name"
+                    class="grid overflow-hidden rounded-sm border border-stone-200 bg-white shadow-sm transition duration-300 hover:shadow-md md:grid-cols-[280px_minmax(0,1fr)]"
+                >
+
+                    <figure class="min-h-64 overflow-hidden">
+
+                        <img
+                            src="1images/CA.jpg"
+                            alt="Cape Azure Lodge overlooking the Atlantic Ocean and Table Mountain"
+                            class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                        >
+
+                        <figcaption class="sr-only">
+                            Cape Azure Lodge, Cape Town
+                        </figcaption>
+
+                    </figure>
+
+                    <section class="relative flex flex-col p-6 sm:p-7">
+
+                        <button
+                            type="button"
+                            aria-label="Add Cape Azure Lodge to favorites"
+                            class="absolute right-5 top-5 text-2xl text-stone-400 transition hover:text-[#9c742f]"
+                        >
+                            <i class="bx bx-heart"></i>
+                        </button>
+
+                        <p class="text-xs font-bold uppercase tracking-[0.14em] text-[#9c742f]">
+                            Boutique Hotel
+                        </p>
+
+                        <h3
+                            id="hotel-4-name"
+                            class="mt-2 pr-10 font-serif text-2xl text-stone-800 sm:text-3xl"
+                        >
+                            Cape Azure Lodge
+                        </h3>
+
+                        <p class="mt-2 flex items-center gap-2 text-sm text-stone-500">
+                            <i class="bx bx-map"></i>
+                            Cape Town, South Africa
+                        </p>
+
+                        <p class="mt-3 flex items-center gap-2 text-sm">
+                            <span class="tracking-wider text-[#a77b32]">★★★★★</span>
+                            <strong class="text-stone-700">4.8</strong>
+                            <span class="text-stone-400">(174 reviews)</span>
+                        </p>
+
+                        <ul class="mt-5 flex flex-wrap gap-x-5 gap-y-3 text-stone-500">
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-water"></i> Ocean View
+                            </li>
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-restaurant"></i> Restaurant
+                            </li>
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-wifi"></i> Free Wi-Fi
+                            </li>
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-car"></i> Parking
+                            </li>
+                        </ul>
+
+                        <p class="mt-5 text-sm leading-6 text-stone-500">
+                            A contemporary coastal retreat overlooking the Atlantic and
+                            Table Mountain.
+                        </p>
+
+                        <footer class="mt-6 flex flex-col gap-5 border-t border-stone-100 pt-5 sm:flex-row sm:items-end sm:justify-between">
+
+                            <section>
+                                <p class="text-xs text-stone-400">From</p>
+
+                                <p class="mt-1 font-serif text-3xl text-stone-800">
+                                    $295
+                                    <span class="font-sans text-xs text-stone-500">
+                                        per night
+                                    </span>
+                                </p>
+
+                                <p class="mt-2 text-xs text-stone-400">
+                                    Breakfast included · Includes taxes and fees
+                                </p>
+                            </section>
+
+                            <a
+                                href="hotel-details.html"
+                                class="inline-flex items-center justify-center border border-[#b89455] px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#8a662b] transition hover:bg-[#9c742f] hover:text-white"
+                            >
+                                View Hotel
+                            </a>
+
+                        </footer>
+
+                    </section>
+
+                </article>
+
+            </li>
+
+
+            <!-- HOTEL 5 -->
+            <li>
+
+                <article
+                    aria-labelledby="hotel-5-name"
+                    class="grid overflow-hidden rounded-sm border border-stone-200 bg-white shadow-sm transition duration-300 hover:shadow-md md:grid-cols-[280px_minmax(0,1fr)]"
+                >
+
+                    <figure class="min-h-64 overflow-hidden">
+
+                        <img
+                            src="1images/AM.jpeg"
+                            alt="Amalfi Grand Estate carved into the cliffs of the Amalfi Coast"
+                            class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                        >
+
+                        <figcaption class="sr-only">
+                            Amalfi Grand Estate, Amalfi Coast
+                        </figcaption>
+
+                    </figure>
+
+                    <section class="relative flex flex-col p-6 sm:p-7">
+
+                        <button
+                            type="button"
+                            aria-label="Add Amalfi Grand Estate to favorites"
+                            class="absolute right-5 top-5 text-2xl text-stone-400 transition hover:text-[#9c742f]"
+                        >
+                            <i class="bx bx-heart"></i>
+                        </button>
+
+                        <p class="text-xs font-bold uppercase tracking-[0.14em] text-[#9c742f]">
+                            Private Resort
+                        </p>
+
+                        <h3
+                            id="hotel-5-name"
+                            class="mt-2 pr-10 font-serif text-2xl text-stone-800 sm:text-3xl"
+                        >
+                            Amalfi Grand Estate
+                        </h3>
+
+                        <p class="mt-2 flex items-center gap-2 text-sm text-stone-500">
+                            <i class="bx bx-map"></i>
+                            Amalfi Coast, Italy
+                        </p>
+
+                        <p class="mt-3 flex items-center gap-2 text-sm">
+                            <span class="tracking-wider text-[#a77b32]">★★★★★</span>
+                            <strong class="text-stone-700">4.9</strong>
+                            <span class="text-stone-400">(87 reviews)</span>
+                        </p>
+
+                        <ul class="mt-5 flex flex-wrap gap-x-5 gap-y-3 text-stone-500">
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-water"></i> Sea View
+                            </li>
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-swim"></i> Pool
+                            </li>
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-spa"></i> Spa
+                            </li>
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-restaurant"></i> Fine Dining
+                            </li>
+                        </ul>
+
+                        <p class="mt-5 text-sm leading-6 text-stone-500">
+                            An intimate Mediterranean escape carved into the cliffs of
+                            the Amalfi Coast.
+                        </p>
+
+                        <footer class="mt-6 flex flex-col gap-5 border-t border-stone-100 pt-5 sm:flex-row sm:items-end sm:justify-between">
+
+                            <section>
+                                <p class="text-xs text-stone-400">From</p>
+
+                                <p class="mt-1 font-serif text-3xl text-stone-800">
+                                    $620
+                                    <span class="font-sans text-xs text-stone-500">
+                                        per night
+                                    </span>
+                                </p>
+
+                                <p class="mt-2 text-xs text-stone-400">
+                                    Free cancellation · Includes taxes and fees
+                                </p>
+                            </section>
+
+                            <a
+                                href="hotel-details.html"
+                                class="inline-flex items-center justify-center border border-[#b89455] px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#8a662b] transition hover:bg-[#9c742f] hover:text-white"
+                            >
+                                View Hotel
+                            </a>
+
+                        </footer>
+
+                    </section>
+
+                </article>
+
+            </li>
+
+
+            <!-- HOTEL 6 -->
+            <li>
+
+                <article
+                    aria-labelledby="hotel-6-name"
+                    class="grid overflow-hidden rounded-sm border border-stone-200 bg-white shadow-sm transition duration-300 hover:shadow-md md:grid-cols-[280px_minmax(0,1fr)]"
+                >
+
+                    <figure class="min-h-64 overflow-hidden">
+
+                        <img
+                            src="1images/RM.jpg"
+                            alt="Elegant lobby of The Royal Montclair in London"
+                            class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                        >
+
+                        <figcaption class="sr-only">
+                            The Royal Montclair, London
+                        </figcaption>
+
+                    </figure>
+
+                    <section class="relative flex flex-col p-6 sm:p-7">
+
+                        <button
+                            type="button"
+                            aria-label="Add The Royal Montclair to favorites"
+                            class="absolute right-5 top-5 text-2xl text-stone-400 transition hover:text-[#9c742f]"
+                        >
+                            <i class="bx bx-heart"></i>
+                        </button>
+
+                        <p class="text-xs font-bold uppercase tracking-[0.14em] text-[#9c742f]">
+                            Luxury Hotel
+                        </p>
+
+                        <h3
+                            id="hotel-6-name"
+                            class="mt-2 pr-10 font-serif text-2xl text-stone-800 sm:text-3xl"
+                        >
+                            The Royal Montclair
+                        </h3>
+
+                        <p class="mt-2 flex items-center gap-2 text-sm text-stone-500">
+                            <i class="bx bx-map"></i>
+                            London, United Kingdom
+                        </p>
+
+                        <p class="mt-3 flex items-center gap-2 text-sm">
+                            <span class="tracking-wider text-[#a77b32]">★★★★★</span>
+                            <strong class="text-stone-700">4.7</strong>
+                            <span class="text-stone-400">(312 reviews)</span>
+                        </p>
+
+                        <ul class="mt-5 flex flex-wrap gap-x-5 gap-y-3 text-stone-500">
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-restaurant"></i> Restaurant
+                            </li>
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-dumbbell"></i> Fitness Center
+                            </li>
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-bell"></i> Room Service
+                            </li>
+                            <li class="flex items-center gap-2 text-sm">
+                                <i class="bx bx-wifi"></i> Free Wi-Fi
+                            </li>
+                        </ul>
+
+                        <p class="mt-5 text-sm leading-6 text-stone-500">
+                            A refined London residence blending classic British elegance
+                            with modern comfort.
+                        </p>
+
+                        <footer class="mt-6 flex flex-col gap-5 border-t border-stone-100 pt-5 sm:flex-row sm:items-end sm:justify-between">
+
+                            <section>
+                                <p class="text-xs text-stone-400">From</p>
+
+                                <p class="mt-1 font-serif text-3xl text-stone-800">
+                                    $340
+                                    <span class="font-sans text-xs text-stone-500">
+                                        per night
+                                    </span>
+                                </p>
+
+                                <p class="mt-2 text-xs text-stone-400">
+                                    Breakfast included · Includes taxes and fees
+                                </p>
+                            </section>
+
+                            <a
+                                href="hotel-details.html"
+                                class="inline-flex items-center justify-center border border-[#b89455] px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#8a662b] transition hover:bg-[#9c742f] hover:text-white"
+                            >
+                                View Hotel
+                            </a>
+
+                        </footer>
+
+                    </section>
+
+                </article>
+
+            </li>
+
+        </ul>
+
+
+        <!-- ======================================================
+             EMPTY STATE
+        ======================================================= -->
+        <section
+            aria-labelledby="no-results-heading"
+            class="hidden py-20 text-center"
+        >
+
+            <i class="bx bx-hotel text-5xl text-stone-300"></i>
+
+            <h2
+                id="no-results-heading"
+                class="mt-5 font-serif text-3xl text-stone-800"
+            >
+                No hotels found
+            </h2>
+
+            <p class="mx-auto mt-3 max-w-md text-sm leading-6 text-stone-500">
+                Try adjusting your dates, destination, or filters to find more
+                available stays.
+            </p>
+
+            <button
+                type="button"
+                class="mt-6 border border-[#b89455] px-6 py-3 text-xs font-bold uppercase tracking-wider text-[#8a662b]"
+            >
+                Clear Filters
+            </button>
+
+        </section>
+
+
+        <!-- ======================================================
+             PAGINATION
+        ======================================================= -->
+        <nav
+            aria-label="Hotel results pagination"
+            class="mt-12 border-t border-stone-200 pt-8"
+        >
+
+            <ul class="flex flex-wrap items-center justify-center gap-2">
+
+                <li>
+                    <a
+                        href="hotels.html"
+                        class="flex h-10 items-center gap-1 border border-stone-200 px-4 text-sm text-stone-600 transition hover:border-[#9c742f] hover:text-[#9c742f]"
+                    >
+                        <i class="bx bx-chevron-left"></i>
+                        Previous
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="hotels.html"
+                        aria-current="page"
+                        class="flex h-10 w-10 items-center justify-center bg-[#9c742f] text-sm font-semibold text-white"
+                    >
+                        1
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="hotels.html"
+                        class="flex h-10 w-10 items-center justify-center border border-stone-200 text-sm text-stone-600 transition hover:border-[#9c742f] hover:text-[#9c742f]"
+                    >
+                        2
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="hotels.html"
+                        class="flex h-10 w-10 items-center justify-center border border-stone-200 text-sm text-stone-600 transition hover:border-[#9c742f] hover:text-[#9c742f]"
+                    >
+                        3
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="hotels.html"
+                        class="flex h-10 w-10 items-center justify-center border border-stone-200 text-sm text-stone-600 transition hover:border-[#9c742f] hover:text-[#9c742f]"
+                    >
+                        4
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="hotels.html"
+                        class="flex h-10 w-10 items-center justify-center border border-stone-200 text-sm text-stone-600 transition hover:border-[#9c742f] hover:text-[#9c742f]"
+                    >
+                        5
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="hotels.html"
+                        class="flex h-10 items-center gap-1 border border-stone-200 px-4 text-sm text-stone-600 transition hover:border-[#9c742f] hover:text-[#9c742f]"
+                    >
+                        Next
+                        <i class="bx bx-chevron-right"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </section>
+
+</section>
+    </main>
+
+  
+  <!-- Footer -->
+<footer class="bg-[#151515] px-6 py-8 text-stone-300 lg:px-8 lg:py-10">
+    <section class="mx-auto max-w-7xl">
+
+        <!-- Footer Content -->
+        <section
+            class="grid gap-8 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1.2fr] lg:gap-6"
+        >
+
+            <!-- Brand -->
+            <section>
+                <a
+                    href="index.html"
+                    class="inline-block"
+                >
+                    <i
+                        class="bx bx-crown block text-center text-xs text-[#b98a32]"
+                        aria-hidden="true"
+                    ></i>
+
+                    <strong class="mt-1 block font-serif text-sm font-medium tracking-[0.22em] text-white">
+                        MAISON ÉLAN
+                    </strong>
+
+                    <span class="mt-1 block text-center text-[8px] uppercase tracking-[0.32em] text-stone-500">
+                        Hotels &amp; Resorts
+                    </span>
+                </a>
+
+                <p class="mt-5 text-xs leading-5 text-stone-400">
+                    Exceptional stays.
+                    <br>
+                    Extraordinary experiences.
+                </p>
+
+                <!-- Social Links -->
+                <nav
+                    aria-label="Social media"
+                    class="mt-4"
+                >
+                    <ul class="flex items-center gap-4">
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="Instagram"
+                                class="text-sm text-stone-400 transition hover:text-[#b98a32]"
+                            >
+                                <i
+                                    class="bx bxl-instagram"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="Facebook"
+                                class="text-sm text-stone-400 transition hover:text-[#b98a32]"
+                            >
+                                <i
+                                    class="bx bxl-facebook"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="Pinterest"
+                                class="text-sm text-stone-400 transition hover:text-[#b98a32]"
+                            >
+                                <i
+                                    class="bx bxl-pinterest-alt"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="YouTube"
+                                class="text-sm text-stone-400 transition hover:text-[#b98a32]"
+                            >
+                                <i
+                                    class="bx bxl-youtube"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <!-- Explore -->
+            <section>
+                <h2 class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#b98a32]">
+                    Explore
+                </h2>
+
+                <nav
+                    aria-label="Explore navigation"
+                    class="mt-3"
+                >
+                    <ul class="space-y-1.5 text-xs">
+                        <li>
+                            <a
+                                href="index.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="hotels.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Hotels
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="hotel-details.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Experiences
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Offers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="contact.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <!-- Company -->
+            <section>
+                <h2 class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#b98a32]">
+                    Company
+                </h2>
+
+                <nav
+                    aria-label="Company navigation"
+                    class="mt-3"
+                >
+                    <ul class="space-y-1.5 text-xs">
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Careers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Press
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Sustainability
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Terms &amp; Conditions
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <!-- Support -->
+            <section>
+                <h2 class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#b98a32]">
+                    Support
+                </h2>
+
+                <nav
+                    aria-label="Support navigation"
+                    class="mt-3"
+                >
+                    <ul class="space-y-1.5 text-xs">
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Help Center
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#faq-heading"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                FAQs
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="booking.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Booking Terms
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <!-- Contact -->
+            <section>
+                <h2 class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#b98a32]">
+                    Contact
+                </h2>
+
+                <address class="mt-3 space-y-2.5 text-xs not-italic text-stone-400">
+
+                    <!-- Phone -->
+                    <p class="flex items-center gap-2.5">
+                        <i
+                            class="bx bx-phone-call text-sm text-[#b98a32]"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="tel:+1234567890"
+                            class="transition hover:text-[#b98a32]"
+                        >
+                            +1 234 567 890
+                        </a>
+                    </p>
+
+                    <!-- Email -->
+                    <p class="flex items-center gap-2.5">
+                        <i
+                            class="bx bx-envelope text-sm text-[#b98a32]"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="mailto:hello@maisonelan.com"
+                            class="transition hover:text-[#b98a32]"
+                        >
+                            hello@maisonelan.com
+                        </a>
+                    </p>
+
+                    <!-- Address -->
+                    <p class="flex items-start gap-2.5 leading-5">
+                        <i
+                            class="bx bx-map text-sm text-[#b98a32]"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            123 Ocean Drive
+                            <br>
+                            Miami, FL 33139
+                        </span>
+                    </p>
+
+                </address>
+            </section>
+
+        </section>
+
+
+        <!-- Copyright -->
+        <section class="mt-7">
+            <p class="text-center text-[10px] text-stone-500">
+                © 2026 Maison Élan. All rights reserved.
+            </p>
+        </section>
+
+    </section>
+</footer>
+</body>
+</html>

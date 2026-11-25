@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Élan | Luxury Hotels &amp; Resorts</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+>
+</head>
+<body>
+
+   <!-- Header -->
+<header class="border-b border-stone-200 bg-[#faf9f6]">
+    <nav
+        aria-label="Primary navigation"
+        class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8"
+    >
+        <!-- Brand -->
+        <a
+            href="../index.html"
+            class="flex shrink-0 flex-col"
+        >
+            <span class="font-serif text-xl font-semibold tracking-[0.2em] text-stone-900">
+                Maison Élan
+            </span>
+
+            <span class="mt-1 text-[0.55rem] font-medium uppercase tracking-[0.35em] text-stone-500">
+                Hotels &amp; Resorts
+            </span>
+        </a>
+
+        <!-- Primary Navigation -->
+        <ul class="hidden items-center gap-8 lg:flex">
+            <li>
+                <a
+                    href="index2.html" 
+                    aria-current="page"
+                    class="border-b border-[#a67c37] pb-2 text-xs font-semibold uppercase tracking-wider text-[#a67c37]"
+                >
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="pages/hotels.html"
+                    class="text-xs font-medium uppercase tracking-wider text-stone-600 transition hover:text-[#a67c37]"
+                >
+                    Hotels
+                </a>
+            </li>
+
+
+                        <li>
+                            <a
+                                href="../pages/hotel-details.html"
+                           class="text-xs font-medium uppercase tracking-wider text-stone-600 transition hover:text-[#a67c37]"
+                >
+                                Experiences
+                            </a>
+                        </li>
+
+
+            <li>
+                <a
+                    href="pages/booking.html"
+                    class="text-xs font-medium uppercase tracking-wider text-stone-600 transition hover:text-[#a67c37]"
+
+                 > Offers
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="pages/contact.html"
+                      class="text-xs font-medium uppercase tracking-wider text-stone-600 transition hover:text-[#a67c37]"
+                >
+                    Contact
+                </a>
+            </li>
+        </ul>
+
+        <!-- Header Actions -->
+        <ul class="flex items-center gap-5">
+           <li>
+    <a
+        href="#sign-in"
+        aria-label="Sign in"
+        class="hidden items-center justify-center text-xl text-stone-700 transition hover:text-[#a67c37] sm:inline-flex"
+    >
+        <i
+            class="bx bx-user"
+            aria-hidden="true"
+        ></i>
+    </a>
+</li>
+            <li>
+                <a
+                    href="pages/booking.html"
+                    class="inline-flex items-center justify-center bg-[#a67c37] px-5 py-3 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-[#8d682e]"
+                >
+                    Book Your Stay
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+<!-- ==========================================================
+     HERO SECTION + HOTEL SEARCH FORM
+=========================================================== -->
+<section
+    class="relative min-h-[620px] overflow-visible bg-stone-100 lg:min-h-[680px]"
+    aria-labelledby="hero-heading"
+>
+
+    <figure class="absolute inset-0 m-0 overflow-hidden">
+        <img
+            src="pages/1images/m.jpg"
+            alt="A luxurious oceanfront hotel resort at sunset with an infinity pool and elegant architecture"
+            class="h-full w-full object-cover object-center"
+        >
+    </figure>
+
+    <p
+        class="relative z-10 mx-auto max-w-7xl px-6 pt-28 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#a67c37] lg:px-8"
+    >
+        <span
+            class="mr-3 inline-block h-px w-7 align-middle bg-[#a67c37]"
+            aria-hidden="true"
+        ></span>
+        Luxury Reimagined
+    </p>
+
+    <h1
+        id="hero-heading"
+        class="relative z-10 mx-auto max-w-7xl px-6 pt-4 font-serif text-5xl font-medium leading-[1.02] tracking-[-0.025em] text-blue sm:text-6xl lg:px-8 lg:text-7xl"
+    >
+        Your stay, beautifully unforgettable.
+    </h1>
+
+    <p
+        class="relative z-10 mx-auto max-w-7xl px-6 pt-5 text-sm leading-6 text-black sm:text-base lg:px-8"
+    >
+        Discover exceptional hotels, extraordinary destinations,<br class="hidden sm:block">
+        and experiences designed around you.
+    </p>
+
+    <ul
+        class="relative z-10 mx-auto flex max-w-7xl flex-wrap gap-3 px-6 pt-7 lg:px-8"
+    >
+        <li>
+            <a
+                href="pages/hotels.html"
+                class="inline-flex items-center justify-center bg-[#10213f] px-6 py-3 text-xs font-semibold text-white transition duration-300 hover:bg-[#1a3155]"
+            >
+                Explore Hotels
+            </a>
+        </li>
+
+        <li>
+            <a
+                href="pages/booking.html"
+                class="inline-flex items-center justify-center border border-[#10213f] bg-white/70 px-6 py-3 text-xs font-semibold text-[#10213f] backdrop-blur-sm transition duration-300 hover:bg-white"
+            >
+                Book Your Stay
+            </a>
+        </li>
+    </ul>
+
+    <form
+        class="relative z-20 mx-auto mt-8 w-[calc(100%-3rem)] max-w-6xl translate-y-1/2 rounded-xl bg-white p-4 shadow-[0_15px_45px_rgba(15,31,55,0.14)] sm:p-5 lg:mt-10 lg:p-4"
+        action="hotels.html"
+        method="get"
+    >
+        <fieldset
+            class="grid gap-3 border-0 p-0 lg:grid-cols-[1.5fr_1fr_1fr_1fr_auto] lg:items-end"
+        >
+            <legend class="sr-only">
+                Find Your Stay
+            </legend>
+
+            <label class="block">
+                <span
+                    class="mb-2 block text-[10px] font-semibold uppercase tracking-wide text-slate-500"
+                >
+                    Destination
+                </span>
+
+                <input
+                    type="text"
+                    id="destination"
+                    name="destination"
+                    placeholder="Where are you going?"
+                    class="h-12 w-full rounded-md border border-slate-200 bg-white px-4 text-sm text-slate-700 outline-none transition placeholder:text-slate-400 focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                >
+            </label>
+
+            <label class="block">
+                <span
+                    class="mb-2 block text-[10px] font-semibold uppercase tracking-wide text-slate-500"
+                >
+                    Check-in
+                </span>
+
+                <input
+                    type="date"
+                    id="check-in"
+                    name="check-in"
+                    class="h-12 w-full rounded-md border border-slate-200 bg-white px-4 text-sm text-slate-700 outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                >
+            </label>
+
+            <label class="block">
+                <span
+                    class="mb-2 block text-[10px] font-semibold uppercase tracking-wide text-slate-500"
+                >
+                    Check-out
+                </span>
+
+                <input
+                    type="date"
+                    id="check-out"
+                    name="check-out"
+                    class="h-12 w-full rounded-md border border-slate-200 bg-white px-4 text-sm text-slate-700 outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                >
+            </label>
+
+            <label class="block">
+                <span
+                    class="mb-2 block text-[10px] font-semibold uppercase tracking-wide text-slate-500"
+                >
+                    Guests
+                </span>
+
+                <select
+                    id="guests"
+                    name="guests"
+                    class="h-12 w-full rounded-md border border-slate-200 bg-white px-4 text-sm text-slate-700 outline-none transition focus:border-[#a67c37] focus:ring-1 focus:ring-[#a67c37]"
+                >
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5+ Guests</option>
+                </select>
+            </label>
+
+            <button
+                type="submit"
+                class="h-12 bg-[#10213f] px-8 text-xs font-semibold text-white transition duration-300 hover:bg-[#1a3155]"
+            >
+                Search
+            </button>
+        </fieldset>
+    </form>
+
+</section>
+
+       <!-- ==========================================================
+     DESTINATIONS SECTION
+=========================================================== -->
+<section
+    class="bg-white px-6 py-16 lg:px-8 lg:py-20"
+    aria-labelledby="destinations-heading"
+>
+
+    <header
+        class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[190px_1fr] lg:gap-12"
+    >
+        <section>
+            <p
+                class="mb-4 flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#a67c37]"
+            >
+                <span
+                    class="h-px w-7 bg-[#a67c37]"
+                    aria-hidden="true"
+                ></span>
+
+                Explore the world
+            </p>
+
+            <h2
+                id="destinations-heading"
+                class="font-serif text-3xl font-medium leading-tight tracking-[-0.02em] text-[#10213f] sm:text-4xl"
+            >
+                Destinations worth discovering
+            </h2>
+
+            <p
+                class="mt-5 max-w-xs text-sm leading-6 text-slate-600"
+            >
+                From coastal escapes to vibrant city retreats, find your next unforgettable destination.
+            </p>
+        </section>
+
+        <ul
+            class="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:gap-5"
+        >
+
+            <!-- Paris -->
+            <li>
+                <article class="group">
+                    <figure class="m-0 overflow-hidden rounded-lg">
+                        <img
+                            src="pages/1images/1.jpg"
+                            alt="The Eiffel Tower in Paris, France"
+                            class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"
+                        >
+                    </figure>
+
+                    <h3
+                        class="mt-3 font-serif text-lg font-medium text-[#10213f]"
+                    >
+                        Paris
+                    </h3>
+
+                    <p
+                        class="mt-1 text-xs text-slate-500"
+                    >
+                        France
+                    </p>
+
+                    <a
+                        href="pages/hotels.html"
+                        class="mt-3 inline-block text-xs font-medium text-[#10213f] underline decoration-[#a67c37] underline-offset-4 transition hover:text-[#a67c37]"
+                    >
+                        View Hotels in Paris
+                    </a>
+                </article>
+            </li>
+
+            <!-- Dubai -->
+            <li>
+                <article class="group">
+                    <figure class="m-0 overflow-hidden rounded-lg">
+                        <img
+                            src="pages/1images/b.jpg"
+                            alt="Dubai skyline featuring the Burj Khalifa"
+                            class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"
+                        >
+                    </figure>
+
+                    <h3
+                        class="mt-3 font-serif text-lg font-medium text-[#10213f]"
+                    >
+                        Dubai
+                    </h3>
+
+                    <p
+                        class="mt-1 text-xs text-slate-500"
+                    >
+                        United Arab Emirates
+                    </p>
+
+                    <a
+                        href="pages/hotels.html"
+                        class="mt-3 inline-block text-xs font-medium text-[#10213f] underline decoration-[#a67c37] underline-offset-4 transition hover:text-[#a67c37]"
+                    >
+                        View Hotels in Dubai
+                    </a>
+                </article>
+            </li>
+
+            <!-- Maldives -->
+            <li>
+                <article class="group">
+                    <figure class="m-0 overflow-hidden rounded-lg">
+                        <img
+                            src="pages/1images/c.jpg"
+                            alt="A luxury overwater resort in the Maldives"
+                            class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"
+                        >
+                    </figure>
+
+                    <h3
+                        class="mt-3 font-serif text-lg font-medium text-[#10213f]"
+                    >
+                        Maldives
+                    </h3>
+
+                    <p
+                        class="mt-1 text-xs text-slate-500"
+                    >
+                        Indian Ocean
+                    </p>
+
+                    <a
+                        href="pages/hotels.html"
+                        class="mt-3 inline-block text-xs font-medium text-[#10213f] underline decoration-[#a67c37] underline-offset-4 transition hover:text-[#a67c37]"
+                    >
+                        View Hotels in the Maldives
+                    </a>
+                </article>
+            </li>
+
+            <!-- Cape Town -->
+            <li>
+                <article class="group">
+                    <figure class="m-0 overflow-hidden rounded-lg">
+                        <img
+                            src="pages/1images/d.jpg"
+                            alt="Table Mountain and the coastline of Cape Town, South Africa"
+                            class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"
+                        >
+                    </figure>
+
+                    <h3
+                        class="mt-3 font-serif text-lg font-medium text-[#10213f]"
+                    >
+                        Cape Town
+                    </h3>
+
+                    <p
+                        class="mt-1 text-xs text-slate-500"
+                    >
+                        South Africa
+                    </p>
+
+                    <a
+                        href="pages/hotels.html"
+                        class="mt-3 inline-block text-xs font-medium text-[#10213f] underline decoration-[#a67c37] underline-offset-4 transition hover:text-[#a67c37]"
+                    >
+                        View Hotels in Cape Town
+                    </a>
+                </article>
+            </li>
+
+        </ul>
+
+    </header>
+
+</section>
+      <!-- ==========================================================
+     FEATURED HOTELS SECTION
+=========================================================== -->
+<section
+    class="bg-[#faf9f6] px-6 py-16 lg:px-8 lg:py-20"
+    aria-labelledby="featured-hotels-heading"
+>
+
+    <header
+        class="mx-auto mb-10 max-w-7xl lg:mb-12"
+    >
+        <p
+            class="mb-4 flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#a67c37]"
+        >
+            <span
+                class="h-px w-7 bg-[#a67c37]"
+                aria-hidden="true"
+            ></span>
+
+            Our finest stays
+        </p>
+
+        <h2
+            id="featured-hotels-heading"
+            class="font-serif text-3xl font-medium leading-tight tracking-[-0.02em] text-[#10213f] sm:text-4xl"
+        >
+            Featured hotels
+        </h2>
+
+        <p
+            class="mt-4 max-w-md text-sm leading-6 text-slate-600"
+        >
+            Handpicked properties offering exceptional comfort,
+            design, and hospitality.
+        </p>
+
+        <a
+            href="pages/hotels.html"
+            class="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#10213f] underline decoration-[#a67c37] underline-offset-4 transition duration-300 hover:text-[#a67c37]"
+        >
+            View all hotels
+            <span aria-hidden="true">→</span>
+        </a>
+    </header>
+
+
+    <ul
+        class="mx-auto grid max-w-7xl gap-5 md:grid-cols-2 lg:grid-cols-3"
+    >
+
+        <!-- ==================================================
+             HOTEL 1 — AZURE PEARL RESORT
+        =================================================== -->
+        <li>
+            <article
+                class="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
+
+                <figure class="m-0 overflow-hidden">
+                    <img
+                        src="pages/1images/azure.jpeg"
+                        alt="Luxury overwater villas at Azure Pearl Resort in the Maldives"
+                        class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
+                    >
+                </figure>
+
+                <header class="px-5 pt-5">
+
+                    <p
+                        class="text-[10px] font-medium uppercase tracking-wider text-slate-500"
+                    >
+                        Maldives
+                    </p>
+
+                    <h3
+                        class="mt-1 font-serif text-xl font-medium text-[#10213f]"
+                    >
+                        Azure Pearl Resort
+                    </h3>
+
+                </header>
+
+                <p
+                    class="px-5 pt-4 text-sm text-[#a67c37]"
+                >
+                    <span aria-label="Rating">★</span>
+                    <span class="font-semibold text-[#10213f]">
+                        4.9
+                    </span>
+                    <span class="text-slate-400">
+                        (128 reviews)
+                    </span>
+                </p>
+
+                <p
+                    class="px-5 pt-4 text-sm font-medium text-[#10213f]"
+                >
+                    <span class="text-xs font-normal text-slate-500">
+                        From
+                    </span>
+
+                    $420
+                    <span class="text-xs font-normal text-slate-500">
+                        / night
+                    </span>
+                </p>
+
+                <a
+                    href="pages/hotel-details.html"
+                    class="mx-5 mb-5 mt-4 inline-flex items-center justify-center bg-[#10213f] px-5 py-3 text-xs font-semibold text-white transition duration-300 hover:bg-[#1a3155]"
+                >
+                    View Hotel
+                </a>
+
+            </article>
+        </li>
+
+
+        <!-- ==================================================
+             HOTEL 2 — THE GRAND AURELIA
+        =================================================== -->
+        <li>
+            <article
+                class="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
+
+                <figure class="m-0 overflow-hidden">
+                    <img
+                        src="pages/1images/close .jpg"
+                        alt="Exterior of The Grand Aurelia luxury hotel in Dubai at dusk"
+                        class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
+                    >
+                </figure>
+
+                <header class="px-5 pt-5">
+
+                    <p
+                        class="text-[10px] font-medium uppercase tracking-wider text-slate-500"
+                    >
+                        Dubai
+                    </p>
+
+                    <h3
+                        class="mt-1 font-serif text-xl font-medium text-[#10213f]"
+                    >
+                        The Grand Aurelia
+                    </h3>
+
+                </header>
+
+                <p
+                    class="px-5 pt-4 text-sm text-[#a67c37]"
+                >
+                    <span aria-label="Rating">★</span>
+                    <span class="font-semibold text-[#10213f]">
+                        4.8
+                    </span>
+                    <span class="text-slate-400">
+                        (96 reviews)
+                    </span>
+                </p>
+
+                <p
+                    class="px-5 pt-4 text-sm font-medium text-[#10213f]"
+                >
+                    <span class="text-xs font-normal text-slate-500">
+                        From
+                    </span>
+
+                    $380
+                    <span class="text-xs font-normal text-slate-500">
+                        / night
+                    </span>
+                </p>
+
+                <a
+                    href="pages/hotel-details.html"
+                    class="mx-5 mb-5 mt-4 inline-flex items-center justify-center bg-[#10213f] px-5 py-3 text-xs font-semibold text-white transition duration-300 hover:bg-[#1a3155]"
+                >
+                    View Hotel
+                </a>
+
+            </article>
+        </li>
+
+
+        <!-- ==================================================
+             HOTEL 3 — MAISON LUMIÈRE
+        =================================================== -->
+        <li>
+            <article
+                class="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
+
+                <figure class="m-0 overflow-hidden">
+                    <img
+                        src="pages/1images/maisonlumiere.jpeg"
+                        alt="Luxury Paris hotel suite at Maison Lumière overlooking the city"
+                        class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
+                    >
+                </figure>
+
+                <header class="px-5 pt-5">
+
+                    <p
+                        class="text-[10px] font-medium uppercase tracking-wider text-slate-500"
+                    >
+                        Paris, France
+                    </p>
+
+                    <h3
+                        class="mt-1 font-serif text-xl font-medium text-[#10213f]"
+                    >
+                        Maison Lumière
+                    </h3>
+
+                </header>
+
+                <p
+                    class="px-5 pt-4 text-sm text-[#a67c37]"
+                >
+                    <span aria-label="Rating">★</span>
+                    <span class="font-semibold text-[#10213f]">
+                        4.9
+                    </span>
+                    <span class="text-slate-400">
+                        (214 reviews)
+                    </span>
+                </p>
+
+                <p
+                    class="px-5 pt-4 text-sm font-medium text-[#10213f]"
+                >
+                    <span class="text-xs font-normal text-slate-500">
+                        From
+                    </span>
+
+                    $510
+                    <span class="text-xs font-normal text-slate-500">
+                        / night
+                    </span>
+                </p>
+
+                <a
+                    href="pages/hotel-details.html"
+                    class="mx-5 mb-5 mt-4 inline-flex items-center justify-center bg-[#10213f] px-5 py-3 text-xs font-semibold text-white transition duration-300 hover:bg-[#1a3155]"
+                >
+                    View Hotel
+                </a>
+
+            </article>
+        </li>
+
+    </ul>
+
+</section>
+<!-- ==========================================================
+     HOTEL EXPERIENCE SECTION
+=========================================================== -->
+<section
+    class="grid bg-[#f5f3ee] lg:grid-cols-2"
+    aria-labelledby="experience-heading"
+>
+
+    <figure class="m-0 h-[420px] overflow-hidden sm:h-[520px] lg:h-[520px]">
+        <img
+            src="pages/1images/hotel1.jpeg"
+            alt="A luxurious hotel suite with ocean views"
+            class="h-full w-full object-cover object-center transition duration-700 hover:scale-105"
+        >
+    </figure>
+
+    <article
+        class="flex flex-col justify-center px-6 py-16 sm:px-10 lg:px-16 xl:px-24"
+    >
+
+        <p
+            class="mb-5 flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#a67c37]"
+        >
+            <span
+                class="h-px w-7 bg-[#a67c37]"
+                aria-hidden="true"
+            ></span>
+
+            The Maison Élan experience
+        </p>
+
+        <h2
+            id="experience-heading"
+            class="max-w-lg font-serif text-4xl font-medium leading-[1.05] tracking-[-0.025em] text-[#10213f] sm:text-5xl"
+        >
+            More than a stay. An experience.
+        </h2>
+
+        <p
+            class="mt-6 max-w-lg text-sm leading-7 text-slate-600 sm:text-base"
+        >
+            Every detail is thoughtfully designed to make your journey
+            comfortable, memorable, and effortless.
+        </p>
+
+        <ul
+            class="mt-8 grid max-w-lg gap-x-8 gap-y-5 border-y border-slate-300 py-7 sm:grid-cols-2"
+        >
+
+            <li
+                class="flex items-center gap-3 text-sm font-medium text-[#10213f]"
+            >
+                <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#a67c37] text-xs text-[#a67c37]"
+                    aria-hidden="true"
+                >
+                    ✓
+                </span>
+
+                Personalized Hospitality
+            </li>
+
+            <li
+                class="flex items-center gap-3 text-sm font-medium text-[#10213f]"
+            >
+                <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#a67c37] text-xs text-[#a67c37]"
+                    aria-hidden="true"
+                >
+                    ✓
+                </span>
+
+                Exceptional Dining
+            </li>
+
+            <li
+                class="flex items-center gap-3 text-sm font-medium text-[#10213f]"
+            >
+                <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#a67c37] text-xs text-[#a67c37]"
+                    aria-hidden="true"
+                >
+                    ✓
+                </span>
+
+                Premium Wellness Experiences
+            </li>
+
+            <li
+                class="flex items-center gap-3 text-sm font-medium text-[#10213f]"
+            >
+                <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#a67c37] text-xs text-[#a67c37]"
+                    aria-hidden="true"
+                >
+                    ✓
+                </span>
+
+                Curated Local Experiences
+            </li>
+
+        </ul>
+
+        <a
+            href="pages/hotel-details.html"
+            class="mt-8 inline-flex w-fit items-center gap-3 bg-[#10213f] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-white transition duration-300 hover:bg-[#1a3155]"
+        >
+            Discover our experience
+
+            <span
+                aria-hidden="true"
+                class="transition-transform duration-300 group-hover:translate-x-1"
+            >
+                →
+            </span>
+        </a>
+
+    </article>
+
+</section>
+        <!-- ==========================================================
+     SPECIAL OFFERS SECTION
+=========================================================== -->
+<section
+    class="bg-[#faf9f6] px-6 py-12 lg:px-8 lg:py-16"
+    aria-labelledby="offers-heading"
+>
+    <section
+        class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[170px_1fr] lg:gap-10"
+    >
+        <!-- Section Heading -->
+        <header class="pt-2">
+            <p
+                class="text-[9px] font-semibold uppercase tracking-[0.22em] text-[#a67c37]"
+            >
+                Exclusive offers
+            </p>
+
+            <h2
+                id="offers-heading"
+                class="mt-2 font-serif text-2xl font-medium leading-tight text-stone-900 lg:text-[27px]"
+            >
+                Make your stay
+                <br>
+                even more special
+            </h2>
+        </header>
+
+        <!-- Offers -->
+        <section
+            aria-label="Exclusive hotel offers"
+            class="grid gap-5 md:grid-cols-2"
+        >
+            <!-- Offer One -->
+            <article
+                class="grid overflow-hidden rounded-xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg sm:grid-cols-[1fr_1fr]"
+            >
+                <section class="order-2 p-5 sm:order-1">
+                    <p
+                        class="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#a67c37]"
+                    >
+                        20% Off
+                    </p>
+
+                    <h3
+                        class="mt-2 font-serif text-xl font-medium text-stone-900"
+                    >
+                        Extended Escape
+                    </h3>
+
+                    <p
+                        class="mt-2 text-[11px] leading-5 text-stone-600"
+                    >
+                        Stay four nights or more and receive an exclusive
+                        discount.
+                    </p>
+
+                    <a
+                        href="pages/booking.html"
+                        class="mt-4 inline-flex items-center gap-1 border-b border-stone-400 pb-0.5 text-[10px] font-semibold text-stone-700 transition hover:border-[#a67c37] hover:text-[#a67c37]"
+                    >
+                        Explore Offer
+                        <i
+                            class="bx bx-right-arrow-alt text-sm"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+                </section>
+
+                <figure class="order-1 sm:order-2">
+                    <img
+                        src="pages/1images/pool.jpg"
+                        alt="Elegant resort pool area for an extended stay offer"
+                        class="h-48 w-full object-cover sm:h-full"
+                    >
+                </figure>
+            </article>
+
+            <!-- Offer Two -->
+            <article
+                class="grid overflow-hidden rounded-xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg sm:grid-cols-[1fr_1fr]"
+            >
+                <section class="order-2 p-5 sm:order-1">
+                    <p
+                        class="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#a67c37]"
+                    >
+                        Experience
+                    </p>
+
+                    <h3
+                        class="mt-2 font-serif text-xl font-medium text-stone-900"
+                    >
+                        Stay &amp; Dine
+                    </h3>
+
+                    <p
+                        class="mt-2 text-[11px] leading-5 text-stone-600"
+                    >
+                        Enjoy a premium room combined with an unforgettable
+                        dining experience.
+                    </p>
+
+                    <a
+                        href="pages/booking.html"
+                        class="mt-4 inline-flex items-center gap-1 border-b border-stone-400 pb-0.5 text-[10px] font-semibold text-stone-700 transition hover:border-[#a67c37] hover:text-[#a67c37]"
+                    >
+                        Explore Offer
+                        <i
+                            class="bx bx-right-arrow-alt text-sm"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+                </section>
+
+                <figure class="order-1 sm:order-2">
+                    <img
+                        src="pages/1images/dining.jpeg"
+                        alt="Fine dining table setting at a luxury hotel restaurant"
+                        class="h-48 w-full object-cover sm:h-full"
+                    >
+                </figure>
+            </article>
+        </section>
+    </section>
+</section>
+
+
+<!-- ==========================================================
+     GUEST TESTIMONIALS SECTION
+=========================================================== -->
+<section
+    class="bg-[#faf9f6] px-6 pb-10 pt-4 lg:px-8 lg:pb-14 lg:pt-6"
+    aria-labelledby="testimonials-heading"
+>
+    <section
+        class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[170px_1fr] lg:gap-10"
+    >
+        <!-- Section Heading -->
+        <header class="pt-2">
+            <p
+                class="text-[9px] font-semibold uppercase tracking-[0.22em] text-[#a67c37]"
+            >
+                Guest stories
+            </p>
+
+            <h2
+                id="testimonials-heading"
+                class="mt-2 font-serif text-2xl font-medium leading-tight text-stone-900 lg:text-[27px]"
+            >
+                Loved by travelers
+            </h2>
+        </header>
+
+        <!-- Testimonials -->
+        <section
+            aria-label="Guest testimonials"
+            class="grid gap-4 md:grid-cols-3"
+        >
+            <!-- Testimonial One -->
+            <article
+                class="rounded-xl border border-stone-200 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+            >
+                <i
+                    class="bx bxs-quote-alt-left text-base text-[#c79b4b]"
+                    aria-hidden="true"
+                ></i>
+
+                <blockquote class="mt-2">
+                    <p
+                        class="text-[11px] leading-5 text-stone-600"
+                    >
+                        An incredible experience from beginning to end.
+                        Every detail felt carefully considered.
+                    </p>
+                </blockquote>
+
+                <footer class="mt-5 flex items-center gap-3">
+                    <img
+                        src="pages/1images/jess.jpg"
+                        alt=""
+                        class="h-7 w-7 rounded-full object-cover"
+                    >
+
+                    <p class="text-[9px] leading-4">
+                        <cite
+                            class="block font-semibold not-italic text-stone-800"
+                        >
+                            Sophia Martin
+                        </cite>
+
+                        <span class="text-stone-500">
+                            Paris, France
+                        </span>
+                    </p>
+                </footer>
+            </article>
+
+            <!-- Testimonial Two -->
+            <article
+                class="rounded-xl border border-stone-200 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+            >
+                <i
+                    class="bx bxs-quote-alt-left text-base text-[#c79b4b]"
+                    aria-hidden="true"
+                ></i>
+
+                <blockquote class="mt-2">
+                    <p
+                        class="text-[11px] leading-5 text-stone-600"
+                    >
+                        Beautiful rooms, exceptional service, and an atmosphere
+                        that made leaving difficult.
+                    </p>
+                </blockquote>
+
+                <footer class="mt-5 flex items-center gap-3">
+                    <img
+                        src="pages/1images/jame.jpg"
+                        alt=""
+                        class="h-7 w-7 rounded-full object-cover"
+                    >
+
+                    <p class="text-[9px] leading-4">
+                        <cite
+                            class="block font-semibold not-italic text-stone-800"
+                        >
+                            Daniel Carter
+                        </cite>
+
+                        <span class="text-stone-500">
+                            London, UK
+                        </span>
+                    </p>
+                </footer>
+            </article>
+
+            <!-- Testimonial Three -->
+            <article
+                class="rounded-xl border border-stone-200 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+            >
+                <i
+                    class="bx bxs-quote-alt-left text-base text-[#c79b4b]"
+                    aria-hidden="true"
+                ></i>
+
+                <blockquote class="mt-2">
+                    <p
+                        class="text-[11px] leading-5 text-stone-600"
+                    >
+                        One of the best hotel experiences I've ever had.
+                    </p>
+                </blockquote>
+
+                <footer class="mt-5 flex items-center gap-3">
+                    <img
+                        src="pages/1images/maria.jpg"
+                        alt=""
+                        class="h-7 w-7 rounded-full object-cover"
+                    >
+
+                    <p class="text-[9px] leading-4">
+                        <cite
+                            class="block font-semibold not-italic text-stone-800"
+                        >
+                            Amara Johnson
+                        </cite>
+
+                        <span class="text-stone-500">
+                            New York, USA
+                        </span>
+                    </p>
+                </footer>
+            </article>
+        </section>
+    </section>
+
+    <!-- Testimonial Pagination -->
+    <nav
+        aria-label="Testimonial navigation"
+        class="mx-auto mt-4 flex max-w-7xl justify-center gap-2"
+    >
+        <button
+            type="button"
+            aria-label="View testimonial one"
+            aria-current="true"
+            class="h-2 w-2 rounded-full bg-[#a67c37]"
+        ></button>
+
+        <button
+            type="button"
+            aria-label="View testimonial two"
+            class="h-2 w-2 rounded-full bg-stone-300 transition hover:bg-[#a67c37]"
+        ></button>
+
+        <button
+            type="button"
+            aria-label="View testimonial three"
+            class="h-2 w-2 rounded-full bg-stone-300 transition hover:bg-[#a67c37]"
+        ></button>
+    </nav>
+</section>
+
+
+<!-- ==========================================================
+     NEWSLETTER SECTION
+=========================================================== -->
+<section
+    class="relative overflow-hidden px-6 py-10 lg:px-8 lg:py-12"
+    aria-labelledby="newsletter-heading"
+>
+    <!-- Background Image -->
+    <img
+        src="pages/1images/e.jpg"
+        alt=""
+        class="absolute inset-0 h-full w-full object-cover"
+    >
+
+    <!-- Overlay -->
+    <section
+        aria-hidden="true"
+        class="absolute inset-0 bg-stone-950/60"
+    ></section>
+
+    <!-- Content -->
+    <section
+        class="relative mx-auto grid max-w-7xl items-center gap-8 lg:grid-cols-[1fr_1.1fr] lg:gap-16"
+    >
+        <!-- Newsletter Text -->
+        <header>
+            <p
+                class="text-[9px] font-semibold uppercase tracking-[0.22em] text-[#d4a04a]"
+            >
+                Stay in the know
+            </p>
+
+            <h2
+                id="newsletter-heading"
+                class="mt-2 font-serif text-2xl font-medium text-white lg:text-[27px]"
+            >
+                Receive exclusive offers and travel inspiration
+            </h2>
+
+            <p
+                class="mt-2 text-[11px] leading-5 text-stone-300"
+            >
+                Sign up for our newsletter and be the first to know.
+            </p>
+        </header>
+
+        <!-- Newsletter Form -->
+        <form
+            action="#"
+            method="post"
+            class="w-full"
+        >
+            <label
+                for="newsletter-email"
+                class="sr-only"
+            >
+                Email address
+            </label>
+
+            <section
+                class="flex flex-col gap-2 sm:flex-row"
+            >
+                <input
+                    type="email"
+                    id="newsletter-email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                    class="h-12 w-full flex-1 rounded-md border border-white/20 bg-white px-4 text-xs text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-[#c79b4b] focus:ring-2 focus:ring-[#c79b4b]/30"
+                >
+
+                <button
+                    type="submit"
+                    class="h-12 shrink-0 rounded-md bg-[#182c49] px-7 text-[10px] font-semibold text-white transition hover:bg-[#a67c37]"
+                >
+                    Subscribe
+                </button>
+            </section>
+        </form>
+    </section>
+</section>
+
+    </main>
+<footer class="bg-[#151515] px-6 py-8 text-stone-300 lg:px-8 lg:py-10">
+    <section class="mx-auto max-w-7xl">
+
+        <!-- Footer Content -->
+        <section
+            class="grid gap-8 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1.2fr] lg:gap-6"
+        >
+
+            <!-- Brand -->
+            <section>
+                <a
+                    href="index2.html"
+                    class="inline-block"
+                >
+                    <i
+                        class="bx bx-crown block text-center text-xs text-[#b98a32]"
+                        aria-hidden="true"
+                    ></i>
+
+                    <strong class="mt-1 block font-serif text-sm font-medium tracking-[0.22em] text-white">
+                        MAISON ÉLAN
+                    </strong>
+
+                    <span class="mt-1 block text-center text-[8px] uppercase tracking-[0.32em] text-stone-500">
+                        Hotels &amp; Resorts
+                    </span>
+                </a>
+
+                <p class="mt-5 text-xs leading-5 text-stone-400">
+                    Exceptional stays.
+                    <br>
+                    Extraordinary experiences.
+                </p>
+
+                <!-- Social Links -->
+                <nav
+                    aria-label="Social media"
+                    class="mt-4"
+                >
+                    <ul class="flex items-center gap-4">
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="Instagram"
+                                class="text-sm text-stone-400 transition hover:text-[#b98a32]"
+                            >
+                                <i
+                                    class="bx bxl-instagram"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="Facebook"
+                                class="text-sm text-stone-400 transition hover:text-[#b98a32]"
+                            >
+                                <i
+                                    class="bx bxl-facebook"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="Pinterest"
+                                class="text-sm text-stone-400 transition hover:text-[#b98a32]"
+                            >
+                                <i
+                                    class="bx bxl-pinterest-alt"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="YouTube"
+                                class="text-sm text-stone-400 transition hover:text-[#b98a32]"
+                            >
+                                <i
+                                    class="bx bxl-youtube"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <!-- Explore -->
+            <section>
+                <h2 class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#b98a32]">
+                    Explore
+                </h2>
+
+                <nav
+                    aria-label="Explore navigation"
+                    class="mt-3"
+                >
+                    <ul class="space-y-1.5 text-xs">
+                        <li>
+                            <a
+                                href="index2.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="pages/hotels.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Hotels
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="pages/hotel-details.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Experiences
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Offers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="pages/contact.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <!-- Company -->
+            <section>
+                <h2 class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#b98a32]">
+                    Company
+                </h2>
+
+                <nav
+                    aria-label="Company navigation"
+                    class="mt-3"
+                >
+                    <ul class="space-y-1.5 text-xs">
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Careers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Press
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Sustainability
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Terms &amp; Conditions
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <!-- Support -->
+            <section>
+                <h2 class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#b98a32]">
+                    Support
+                </h2>
+
+                <nav
+                    aria-label="Support navigation"
+                    class="mt-3"
+                >
+                    <ul class="space-y-1.5 text-xs">
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Help Center
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#faq-heading"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                FAQs
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="pages/booking.html"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Booking Terms
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                class="transition hover:text-[#b98a32]"
+                            >
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <!-- Contact -->
+            <section>
+                <h2 class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#b98a32]">
+                    Contact
+                </h2>
+
+                <address class="mt-3 space-y-2.5 text-xs not-italic text-stone-400">
+
+                    <!-- Phone -->
+                    <p class="flex items-center gap-2.5">
+                        <i
+                            class="bx bx-phone-call text-sm text-[#b98a32]"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="tel:+1234567890"
+                            class="transition hover:text-[#b98a32]"
+                        >
+                            +1 234 567 890
+                        </a>
+                    </p>
+
+                    <!-- Email -->
+                    <p class="flex items-center gap-2.5">
+                        <i
+                            class="bx bx-envelope text-sm text-[#b98a32]"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="mailto:hello@maisonelan.com"
+                            class="transition hover:text-[#b98a32]"
+                        >
+                            hello@maisonelan.com
+                        </a>
+                    </p>
+
+                    <!-- Address -->
+                    <p class="flex items-start gap-2.5 leading-5">
+                        <i
+                            class="bx bx-map text-sm text-[#b98a32]"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            123 Ocean Drive
+                            <br>
+                            Miami, FL 33139
+                        </span>
+                    </p>
+
+                </address>
+            </section>
+
+        </section>
+
+
+        <!-- Copyright -->
+        <section class="mt-7">
+            <p class="text-center text-[10px] text-stone-500">
+                © 2026 Maison Élan. All rights reserved.
+            </p>
+        </section>
+
+    </section>
+</footer>
+</body>
+</html>
